@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Param_Hexagon" data-name="Param Hexagon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 24 24">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: url(#Unbenannter_Verlauf_327-5);
+      }
+
+      .cls-1, .cls-2, .cls-3, .cls-4, .cls-5, .cls-6, .cls-7, .cls-8 {
+        stroke-width: .3px;
+      }
+
+      .cls-1, .cls-2, .cls-3, .cls-4, .cls-5, .cls-6, .cls-7, .cls-8, .cls-9, .cls-10, .cls-11, .cls-12 {
+        stroke: #333;
+        stroke-miterlimit: 10;
+      }
+
+      .cls-2 {
+        fill: url(#Unbenannter_Verlauf_327-7);
+      }
+
+      .cls-3 {
+        fill: url(#Unbenannter_Verlauf_327-6);
+      }
+
+      .cls-4 {
+        fill: url(#Unbenannter_Verlauf_327-4);
+      }
+
+      .cls-5 {
+        fill: url(#Unbenannter_Verlauf_327-8);
+      }
+
+      .cls-6 {
+        fill: url(#Unbenannter_Verlauf_327-9);
+      }
+
+      .cls-7 {
+        fill: url(#Unbenannter_Verlauf_327-2);
+      }
+
+      .cls-8 {
+        fill: url(#Unbenannter_Verlauf_327-3);
+      }
+
+      .cls-9 {
+        fill: url(#Unbenannter_Verlauf_230-2);
+      }
+
+      .cls-9, .cls-10, .cls-12 {
+        stroke-width: .5px;
+      }
+
+      .cls-10 {
+        fill: url(#Unbenannter_Verlauf_230-3);
+      }
+
+      .cls-11 {
+        fill: url(#Unbenannter_Verlauf_327);
+        stroke-width: .75px;
+      }
+
+      .cls-12 {
+        fill: url(#Unbenannter_Verlauf_230);
+      }
+    </style>
+    <linearGradient id="Unbenannter_Verlauf_230" data-name="Unbenannter Verlauf 230" x1="2.25" y1="17.51" x2="4.18" y2="17.51" gradientUnits="userSpaceOnUse">
+      <stop offset=".16" stop-color="#fbd9d4"/>
+      <stop offset="1" stop-color="#a6c176" stop-opacity=".9"/>
+    </linearGradient>
+    <linearGradient id="Unbenannter_Verlauf_230-2" data-name="Unbenannter Verlauf 230" x1="5.49" y1="15.77" x2="7.41" y2="15.77" xlink:href="#Unbenannter_Verlauf_230"/>
+    <linearGradient id="Unbenannter_Verlauf_230-3" data-name="Unbenannter Verlauf 230" x1="8.79" y1="18.64" x2="10.71" y2="18.64" xlink:href="#Unbenannter_Verlauf_230"/>
+    <radialGradient id="Unbenannter_Verlauf_327" data-name="Unbenannter Verlauf 327" cx="16.01" cy="9.25" fx="16.01" fy="9.25" r="3.55" gradientUnits="userSpaceOnUse">
+      <stop offset=".16" stop-color="#fbd9d4"/>
+      <stop offset="1" stop-color="#a6c176" stop-opacity=".9"/>
+    </radialGradient>
+    <radialGradient id="Unbenannter_Verlauf_327-2" data-name="Unbenannter Verlauf 327" cx="16.01" cy="14.58" fx="16.01" fy="14.58" r=".9" xlink:href="#Unbenannter_Verlauf_327"/>
+    <radialGradient id="Unbenannter_Verlauf_327-3" data-name="Unbenannter Verlauf 327" cx="19.56" cy="12.75" fx="19.56" fy="12.75" r=".99" xlink:href="#Unbenannter_Verlauf_327"/>
+    <radialGradient id="Unbenannter_Verlauf_327-4" data-name="Unbenannter Verlauf 327" cx="12.47" cy="5.76" fx="12.47" fy="5.76" r=".99" xlink:href="#Unbenannter_Verlauf_327"/>
+    <radialGradient id="Unbenannter_Verlauf_327-5" data-name="Unbenannter Verlauf 327" cx="12.47" cy="12.75" fx="12.47" fy="12.75" r=".99" xlink:href="#Unbenannter_Verlauf_327"/>
+    <radialGradient id="Unbenannter_Verlauf_327-6" data-name="Unbenannter Verlauf 327" cx="19.56" cy="5.76" fx="19.56" fy="5.76" r=".99" xlink:href="#Unbenannter_Verlauf_327"/>
+    <radialGradient id="Unbenannter_Verlauf_327-7" data-name="Unbenannter Verlauf 327" cx="10.62" cy="9.25" fx="10.62" fy="9.25" r=".9" xlink:href="#Unbenannter_Verlauf_327"/>
+    <radialGradient id="Unbenannter_Verlauf_327-8" data-name="Unbenannter Verlauf 327" cx="21.41" cy="9.25" fx="21.41" fy="9.25" r=".9" xlink:href="#Unbenannter_Verlauf_327"/>
+    <radialGradient id="Unbenannter_Verlauf_327-9" data-name="Unbenannter Verlauf 327" cx="16.01" cy="3.93" fx="16.01" fy="3.93" r=".9" xlink:href="#Unbenannter_Verlauf_327"/>
+  </defs>
+  <rect class="cls-12" x="2.25" y="13.19" width="1.93" height="8.64"/>
+  <rect class="cls-9" x="5.49" y="9.71" width="1.93" height="12.12"/>
+  <rect class="cls-10" x="8.79" y="15.45" width="1.93" height="6.38"/>
+  <g>
+    <path class="cls-11" d="M18.8,11.46c-1.24,1.52-3.48,1.76-5.02.54-1.54-1.22-1.78-3.44-.55-4.96,1.24-1.52,3.48-1.76,5.02-.54,1.54,1.22,1.78,3.44.55,4.96Z"/>
+    <polygon class="cls-7" points="16.01 15.6 16.78 13.57 16.01 13.57 15.25 13.57 16.01 15.6"/>
+    <polygon class="cls-8" points="20.56 13.74 19.64 11.77 19.1 12.3 18.56 12.84 20.56 13.74"/>
+    <polygon class="cls-4" points="11.47 4.77 13.47 5.67 12.93 6.21 12.38 6.74 11.47 4.77"/>
+    <polygon class="cls-1" points="11.47 13.74 13.47 12.84 12.93 12.3 12.38 11.77 11.47 13.74"/>
+    <polygon class="cls-3" points="20.56 4.77 19.64 6.74 19.1 6.21 18.56 5.67 20.56 4.77"/>
+    <polygon class="cls-2" points="9.59 9.25 11.65 10.01 11.65 9.25 11.65 8.5 9.59 9.25"/>
+    <polygon class="cls-5" points="22.44 9.25 20.38 10.01 20.38 9.25 20.38 8.5 22.44 9.25"/>
+    <polygon class="cls-6" points="16.01 2.91 16.78 4.94 16.01 4.94 15.25 4.94 16.01 2.91"/>
+  </g>
+</svg>

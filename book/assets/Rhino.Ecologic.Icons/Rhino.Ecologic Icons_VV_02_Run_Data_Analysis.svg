@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Param_Hexagon" data-name="Param Hexagon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 24 24">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: url(#Unbenannter_Verlauf_327);
+      }
+
+      .cls-1, .cls-2, .cls-3, .cls-4 {
+        stroke: #333;
+        stroke-miterlimit: 10;
+      }
+
+      .cls-1, .cls-3, .cls-4 {
+        stroke-width: .5px;
+      }
+
+      .cls-2 {
+        fill: url(#Unbenannter_Verlauf_232);
+        stroke-width: .3px;
+      }
+
+      .cls-3 {
+        fill: url(#Winter-Violett_radial);
+      }
+
+      .cls-4 {
+        fill: url(#Unbenannter_Verlauf_19);
+      }
+    </style>
+    <linearGradient id="Unbenannter_Verlauf_232" data-name="Unbenannter Verlauf 232" x1="2.06" y1="11.75" x2="21.94" y2="11.75" gradientUnits="userSpaceOnUse">
+      <stop offset=".16" stop-color="#fbd9d4"/>
+      <stop offset="1" stop-color="#f0a3a3" stop-opacity=".9"/>
+    </linearGradient>
+    <radialGradient id="Unbenannter_Verlauf_19" data-name="Unbenannter Verlauf 19" cx="9.11" cy="14.46" fx="9.11" fy="14.46" r="3.13" gradientUnits="userSpaceOnUse">
+      <stop offset=".16" stop-color="#fbf6e2"/>
+      <stop offset="1" stop-color="#b9a794" stop-opacity=".9"/>
+    </radialGradient>
+    <radialGradient id="Winter-Violett_radial" data-name="Winter-Violett radial" cx="12.34" cy="12.72" fx="12.34" fy="12.72" r="4.34" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#ebedf6"/>
+      <stop offset=".5" stop-color="#d8dcec"/>
+      <stop offset="1" stop-color="#c3c9e0"/>
+    </radialGradient>
+    <radialGradient id="Unbenannter_Verlauf_327" data-name="Unbenannter Verlauf 327" cx="15.64" cy="15.59" fx="15.64" fy="15.59" r="2.36" gradientUnits="userSpaceOnUse">
+      <stop offset=".16" stop-color="#fbd9d4"/>
+      <stop offset="1" stop-color="#a6c176" stop-opacity=".9"/>
+    </radialGradient>
+  </defs>
+  <path class="cls-2" d="M21.75,11.62h.09s.03,0,.05,0c.01,0,.04-.02.04,0,0,.06,0,.12,0,.19,0,.12,0,.25,0,.37,0,.25,0,.51-.03.76-.04.52-.11,1.03-.23,1.54-.25,1.06-.64,2.02-1.21,2.96-1.1,1.79-2.73,3.18-4.66,3.98-3.98,1.65-8.57.55-11.37-2.72-2.8-3.28-3.17-7.98-.92-11.66,1.14-1.86,2.85-3.29,4.88-4.08.49-.19.99-.34,1.51-.45.25-.05.5-.1.76-.13.13-.02.25-.03.38-.04.06,0,.13-.01.19-.02.03,0,.16.02.15-.04l-.04-.73v-.18s.04,0,.06,0c.03.01.06.02.09.03l.34.12c.46.17.92.33,1.37.5.48.18.97.35,1.45.53.24.09.48.18.73.26.12.04.24.09.36.13.04.01-.03.03-.05.04-.03.01-.06.03-.09.04-.06.03-.11.06-.17.09-.92.47-1.84.93-2.76,1.4-.23.12-.46.23-.69.35-.11.06-.23.12-.34.18-.03.01-.06.03-.09.04-.02.01,0-.03,0-.04v-.05c0-.06-.01-.13-.01-.19l-.02-.39v-.19s-.01-.03-.01-.05.03-.05,0-.05c-.03,0-.06,0-.1.01-.25.03-.5.07-.76.12-1.08.23-2.04.62-2.96,1.22-3.66,2.37-5.01,7.06-3.17,11.01.88,1.89,2.4,3.4,4.29,4.26.95.43,1.9.68,2.94.76.48.04.96.04,1.44,0,.23-.02.46-.05.69-.09.38-.06.73-.2,1.09-.33,4.2-1.59,6.84-4.85,6.78-9.48Z"/>
+  <rect class="cls-4" x="8.15" y="10.14" width="1.93" height="8.64"/>
+  <rect class="cls-3" x="11.38" y="6.66" width="1.93" height="12.12"/>
+  <rect class="cls-1" x="14.68" y="12.4" width="1.93" height="6.38"/>
+</svg>

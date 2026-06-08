@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Text" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 24 24">
+  <defs>
+    <style>
+      .cls-1, .cls-2 {
+        fill: none;
+      }
+
+      .cls-1, .cls-2, .cls-3 {
+        stroke: #333;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+      }
+
+      .cls-1, .cls-3 {
+        stroke-width: .75px;
+      }
+
+      .cls-2 {
+        stroke-width: .5px;
+      }
+
+      .cls-3 {
+        fill: #333;
+      }
+
+      .cls-4 {
+        fill: #7f9c63;
+      }
+
+      .cls-5 {
+        fill: #63813a;
+      }
+
+      .cls-6 {
+        fill: url(#Unbenannter_Verlauf_346);
+      }
+    </style>
+    <radialGradient id="Unbenannter_Verlauf_346" data-name="Unbenannter Verlauf 346" cx="6.28" cy="16.22" fx="6.28" fy="16.22" r="7.28" gradientUnits="userSpaceOnUse">
+      <stop offset=".09" stop-color="#fbd9d4" stop-opacity=".6"/>
+      <stop offset=".37" stop-color="#e6d3bd" stop-opacity=".67"/>
+      <stop offset=".86" stop-color="#afc380" stop-opacity=".87"/>
+      <stop offset=".94" stop-color="#a6c176" stop-opacity=".9"/>
+    </radialGradient>
+  </defs>
+  <polygon class="cls-6" points="3.36 6.94 12.81 8.96 13.09 20.93 4.14 18.15 3.36 6.94"/>
+  <polygon class="cls-4" points="12.81 8.96 20.22 6.26 20.08 17.21 13.09 20.93 12.81 8.96"/>
+  <polygon class="cls-5" points="3.36 6.94 11.16 4.61 20.22 6.26 12.81 8.96 3.36 6.94"/>
+  <line class="cls-2" x1="3.36" y1="6.94" x2="12.81" y2="8.96"/>
+  <line class="cls-2" x1="13.09" y1="20.93" x2="12.81" y2="8.96"/>
+  <line class="cls-1" x1="20.22" y1="6.26" x2="11.16" y2="4.61"/>
+  <line class="cls-2" x1="12.81" y1="8.96" x2="20.22" y2="6.26"/>
+  <line class="cls-1" x1="20.08" y1="17.21" x2="20.22" y2="6.26"/>
+  <line class="cls-3" x1="13.09" y1="20.93" x2="20.08" y2="17.21"/>
+  <line class="cls-1" x1="4.14" y1="18.15" x2="13.09" y2="20.93"/>
+  <line class="cls-1" x1="11.16" y1="4.61" x2="3.36" y2="6.94"/>
+  <line class="cls-1" x1="4.14" y1="18.15" x2="3.36" y2="6.94"/>
+</svg>

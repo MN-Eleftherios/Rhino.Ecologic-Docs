@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Param_Hexagon" data-name="Param Hexagon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 24 24">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: url(#Unbenannter_Verlauf_333);
+      }
+
+      .cls-1, .cls-2, .cls-3 {
+        stroke-miterlimit: 10;
+        stroke-width: .4px;
+      }
+
+      .cls-1, .cls-2, .cls-3, .cls-4 {
+        stroke: #333;
+      }
+
+      .cls-2 {
+        fill: url(#Unbenannter_Verlauf_351);
+      }
+
+      .cls-3 {
+        fill: url(#Unbenannter_Verlauf_360);
+      }
+
+      .cls-4 {
+        fill: none;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+      }
+    </style>
+    <radialGradient id="Unbenannter_Verlauf_333" data-name="Unbenannter Verlauf 333" cx="17.99" cy="12.1" fx="17.99" fy="12.1" r="3.85" gradientUnits="userSpaceOnUse">
+      <stop offset=".16" stop-color="#fce8b9"/>
+      <stop offset="1" stop-color="#f0a3a3" stop-opacity=".9"/>
+    </radialGradient>
+    <radialGradient id="Unbenannter_Verlauf_360" data-name="Unbenannter Verlauf 360" cx="10.21" cy="19.22" fx="10.21" fy="19.22" r="3.85" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#6d8e40" stop-opacity=".9"/>
+      <stop offset=".62" stop-color="#fbd9d4"/>
+    </radialGradient>
+    <radialGradient id="Unbenannter_Verlauf_351" data-name="Unbenannter Verlauf 351" cx="7.44" cy="4.98" fx="7.44" fy="4.98" r="3.85" gradientUnits="userSpaceOnUse">
+      <stop offset=".16" stop-color="#fce8b9"/>
+      <stop offset="1" stop-color="#8aab8c" stop-opacity=".9"/>
+    </radialGradient>
+  </defs>
+  <line class="cls-4" x1="12.63" y1="4.98" x2="22.83" y2="4.98"/>
+  <line class="cls-4" x1="1" y1="4.98" x2="2.41" y2="4.98"/>
+  <line class="cls-4" x1="1.25" y1="12.1" x2="12.96" y2="12.1"/>
+  <line class="cls-4" x1="15.05" y1="19.22" x2="22.83" y2="19.22"/>
+  <line class="cls-4" x1="1.25" y1="19.22" x2="5.25" y2="19.22"/>
+  <path class="cls-1" d="M15.06,14.61c-.32,0-.64-.07-.93-.2-.22-.1-.42-.24-.58-.42-.13-.14-.23-.3-.3-.48-.07-.17-.11-.36-.11-.55v-1.73c0-.19.04-.37.11-.55.07-.18.17-.34.3-.48.16-.18.36-.32.58-.42.29-.14.61-.2.93-.2h5.86c.32,0,.64.07.93.2.22.1.42.24.58.42.13.14.23.3.3.48.07.17.11.36.11.55v1.73c0,.19-.04.37-.11.55-.07.18-.17.34-.3.48-.16.18-.36.32-.58.42-.29.14-.61.2-.93.2h-5.86ZM15.06,13.63h5.05c.35,0,1.05.05,1.39-.15.42-.25.34-.59.34-.97v-1.16c0-.55-.43-.78-.92-.78h-5.05c-.35,0-1.05-.05-1.39.15-.42.25-.34.59-.34.97v1.16c0,.55.43.78.92.78Z"/>
+  <path class="cls-3" d="M7.28,21.74c-.32,0-.64-.07-.93-.2-.22-.1-.42-.24-.58-.42-.13-.14-.23-.3-.3-.48-.07-.17-.11-.36-.11-.55v-1.73c0-.19.04-.37.11-.55.07-.18.17-.34.3-.48.16-.18.36-.32.58-.42.29-.14.61-.2.93-.2h5.86c.32,0,.64.07.93.2.22.1.42.24.58.42.13.14.23.3.3.48.07.17.11.36.11.55v1.73c0,.19-.04.37-.11.55-.07.18-.17.34-.3.48-.16.18-.36.32-.58.42-.29.14-.61.2-.93.2h-5.86ZM7.28,20.75h5.05c.35,0,1.05.05,1.39-.15.42-.25.34-.59.34-.97v-1.16c0-.55-.43-.78-.92-.78h-5.05c-.35,0-1.05-.05-1.39.15-.42.25-.34.59-.34.97v1.16c0,.55.43.78.92.78Z"/>
+  <path class="cls-2" d="M4.51,7.49c-.32,0-.64-.07-.93-.2-.22-.1-.42-.24-.58-.42-.13-.14-.23-.3-.3-.48-.07-.17-.11-.36-.11-.55v-1.73c0-.19.04-.37.11-.55.07-.18.17-.34.3-.48.16-.18.36-.32.58-.42.29-.14.61-.2.93-.2h5.86c.32,0,.64.07.93.2.22.1.42.24.58.42.13.14.23.3.3.48.07.17.11.36.11.55v1.73c0,.19-.04.37-.11.55-.07.18-.17.34-.3.48-.16.18-.36.32-.58.42-.29.14-.61.2-.93.2h-5.86ZM4.51,6.51h5.05c.35,0,1.05.05,1.39-.15.42-.25.34-.59.34-.97v-1.16c0-.55-.43-.78-.92-.78h-5.05c-.35,0-1.05-.05-1.39.15-.42.25-.34.59-.34.97v1.16c0,.55.43.78.92.78Z"/>
+</svg>

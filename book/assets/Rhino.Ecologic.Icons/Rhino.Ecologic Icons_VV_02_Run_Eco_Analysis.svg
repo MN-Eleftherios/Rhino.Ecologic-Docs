@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Text" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 24 24">
+  <defs>
+    <style>
+      .cls-1, .cls-2 {
+        fill: none;
+      }
+
+      .cls-1, .cls-2, .cls-3 {
+        stroke-linecap: round;
+        stroke-linejoin: round;
+      }
+
+      .cls-1, .cls-2, .cls-3, .cls-4 {
+        stroke: #333;
+      }
+
+      .cls-1, .cls-3 {
+        stroke-width: .75px;
+      }
+
+      .cls-2 {
+        stroke-width: .5px;
+      }
+
+      .cls-3 {
+        fill: #333;
+      }
+
+      .cls-5 {
+        fill: #7f9c63;
+      }
+
+      .cls-6 {
+        fill: #63813a;
+      }
+
+      .cls-4 {
+        fill: url(#Unbenannter_Verlauf_232);
+        stroke-miterlimit: 10;
+        stroke-width: .3px;
+      }
+
+      .cls-7 {
+        fill: url(#Unbenannter_Verlauf_327);
+      }
+    </style>
+    <linearGradient id="Unbenannter_Verlauf_232" data-name="Unbenannter Verlauf 232" x1="2.06" y1="11.75" x2="21.94" y2="11.75" gradientUnits="userSpaceOnUse">
+      <stop offset=".16" stop-color="#fbd9d4"/>
+      <stop offset="1" stop-color="#f0a3a3" stop-opacity=".9"/>
+    </linearGradient>
+    <radialGradient id="Unbenannter_Verlauf_327" data-name="Unbenannter Verlauf 327" cx="9.81" cy="14.05" fx="9.81" fy="14.05" r="4.39" gradientUnits="userSpaceOnUse">
+      <stop offset=".16" stop-color="#fbd9d4"/>
+      <stop offset="1" stop-color="#a6c176" stop-opacity=".9"/>
+    </radialGradient>
+  </defs>
+  <path class="cls-4" d="M21.75,11.62h.09s.03,0,.05,0c.01,0,.04-.02.04,0,0,.06,0,.12,0,.19,0,.12,0,.25,0,.37,0,.25,0,.51-.03.76-.04.52-.11,1.03-.23,1.54-.25,1.06-.64,2.02-1.21,2.96-1.1,1.79-2.73,3.18-4.66,3.98-3.98,1.65-8.57.55-11.37-2.72-2.8-3.28-3.17-7.98-.92-11.66,1.14-1.86,2.85-3.29,4.88-4.08.49-.19.99-.34,1.51-.45.25-.05.5-.1.76-.13.13-.02.25-.03.38-.04.06,0,.13-.01.19-.02.03,0,.16.02.15-.04l-.04-.73v-.18s.04,0,.06,0c.03.01.06.02.09.03l.34.12c.46.17.92.33,1.37.5.48.18.97.35,1.45.53.24.09.48.18.73.26.12.04.24.09.36.13.04.01-.03.03-.05.04-.03.01-.06.03-.09.04-.06.03-.11.06-.17.09-.92.47-1.84.93-2.76,1.4-.23.12-.46.23-.69.35-.11.06-.23.12-.34.18-.03.01-.06.03-.09.04-.02.01,0-.03,0-.04v-.05c0-.06-.01-.13-.01-.19l-.02-.39v-.19s-.01-.03-.01-.05.03-.05,0-.05c-.03,0-.06,0-.1.01-.25.03-.5.07-.76.12-1.08.23-2.04.62-2.96,1.22-3.66,2.37-5.01,7.06-3.17,11.01.88,1.89,2.4,3.4,4.29,4.26.95.43,1.9.68,2.94.76.48.04.96.04,1.44,0,.23-.02.46-.05.69-.09.38-.06.73-.2,1.09-.33,4.2-1.59,6.84-4.85,6.78-9.48Z"/>
+  <g>
+    <polygon class="cls-7" points="6.26 8.96 13.15 10.43 13.36 19.15 6.83 17.13 6.26 8.96"/>
+    <polygon class="cls-5" points="13.15 10.43 18.56 8.46 18.45 16.44 13.36 19.15 13.15 10.43"/>
+    <polygon class="cls-6" points="6.26 8.96 11.95 7.26 18.56 8.46 13.15 10.43 6.26 8.96"/>
+    <line class="cls-2" x1="6.26" y1="8.96" x2="13.15" y2="10.43"/>
+    <line class="cls-2" x1="13.36" y1="19.15" x2="13.15" y2="10.43"/>
+    <line class="cls-1" x1="18.56" y1="8.46" x2="11.95" y2="7.26"/>
+    <line class="cls-2" x1="13.15" y1="10.43" x2="18.56" y2="8.46"/>
+    <line class="cls-1" x1="18.45" y1="16.44" x2="18.56" y2="8.46"/>
+    <line class="cls-3" x1="13.36" y1="19.15" x2="18.45" y2="16.44"/>
+    <line class="cls-1" x1="6.83" y1="17.13" x2="13.36" y2="19.15"/>
+    <line class="cls-1" x1="11.95" y1="7.26" x2="6.26" y2="8.96"/>
+    <line class="cls-1" x1="6.83" y1="17.13" x2="6.26" y2="8.96"/>
+  </g>
+</svg>

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Lines" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 24 24">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: url(#Unbenannter_Verlauf_327-5);
+      }
+
+      .cls-1, .cls-2, .cls-3, .cls-4, .cls-5, .cls-6, .cls-7, .cls-8, .cls-9 {
+        stroke-width: .3px;
+      }
+
+      .cls-1, .cls-2, .cls-3, .cls-4, .cls-5, .cls-6, .cls-7, .cls-8, .cls-9, .cls-10 {
+        stroke: #333;
+      }
+
+      .cls-1, .cls-2, .cls-3, .cls-4, .cls-5, .cls-6, .cls-7, .cls-8, .cls-10 {
+        stroke-miterlimit: 10;
+      }
+
+      .cls-2 {
+        fill: url(#Unbenannter_Verlauf_327-7);
+      }
+
+      .cls-3 {
+        fill: url(#Unbenannter_Verlauf_327-6);
+      }
+
+      .cls-4 {
+        fill: url(#Unbenannter_Verlauf_327-4);
+      }
+
+      .cls-5 {
+        fill: url(#Unbenannter_Verlauf_327-8);
+      }
+
+      .cls-6 {
+        fill: url(#Unbenannter_Verlauf_327-9);
+      }
+
+      .cls-7 {
+        fill: url(#Unbenannter_Verlauf_327-2);
+      }
+
+      .cls-8 {
+        fill: url(#Unbenannter_Verlauf_327-3);
+      }
+
+      .cls-9 {
+        fill: none;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+      }
+
+      .cls-10 {
+        fill: url(#Unbenannter_Verlauf_327);
+        stroke-width: .75px;
+      }
+
+      .cls-11 {
+        fill: #333;
+      }
+    </style>
+    <radialGradient id="Unbenannter_Verlauf_327" data-name="Unbenannter Verlauf 327" cx="11.81" cy="13.61" fx="11.81" fy="13.61" r="3.23" gradientUnits="userSpaceOnUse">
+      <stop offset=".16" stop-color="#fbd9d4"/>
+      <stop offset="1" stop-color="#a6c176" stop-opacity=".9"/>
+    </radialGradient>
+    <radialGradient id="Unbenannter_Verlauf_327-2" data-name="Unbenannter Verlauf 327" cx="11.81" cy="18.46" fx="11.81" fy="18.46" r=".82" xlink:href="#Unbenannter_Verlauf_327"/>
+    <radialGradient id="Unbenannter_Verlauf_327-3" data-name="Unbenannter Verlauf 327" cx="15.03" cy="16.79" fx="15.03" fy="16.79" r=".9" xlink:href="#Unbenannter_Verlauf_327"/>
+    <radialGradient id="Unbenannter_Verlauf_327-4" data-name="Unbenannter Verlauf 327" cx="8.59" cy="10.43" fx="8.59" fy="10.43" r=".9" xlink:href="#Unbenannter_Verlauf_327"/>
+    <radialGradient id="Unbenannter_Verlauf_327-5" data-name="Unbenannter Verlauf 327" cx="8.59" cy="16.79" fx="8.59" fy="16.79" r=".9" xlink:href="#Unbenannter_Verlauf_327"/>
+    <radialGradient id="Unbenannter_Verlauf_327-6" data-name="Unbenannter Verlauf 327" cx="15.03" cy="10.43" fx="15.03" fy="10.43" r=".9" xlink:href="#Unbenannter_Verlauf_327"/>
+    <radialGradient id="Unbenannter_Verlauf_327-7" data-name="Unbenannter Verlauf 327" cx="6.91" cy="13.61" fx="6.91" fy="13.61" r=".82" xlink:href="#Unbenannter_Verlauf_327"/>
+    <radialGradient id="Unbenannter_Verlauf_327-8" data-name="Unbenannter Verlauf 327" cx="16.71" cy="13.61" fx="16.71" fy="13.61" r=".82" xlink:href="#Unbenannter_Verlauf_327"/>
+    <radialGradient id="Unbenannter_Verlauf_327-9" data-name="Unbenannter Verlauf 327" cx="11.81" cy="8.77" fx="11.81" fy="8.77" r=".82" xlink:href="#Unbenannter_Verlauf_327"/>
+  </defs>
+  <path class="cls-9" d="M22.23,14.27c-.19-6.01-4.71-10.83-10.26-10.83S1.91,8.26,1.72,14.27"/>
+  <path class="cls-11" d="M6.34,6.47c0-.68-.56-1.24-1.25-1.24s-1.26.55-1.26,1.24.56,1.24,1.26,1.24,1.25-.55,1.25-1.24Z"/>
+  <path class="cls-11" d="M19.96,6.47c0-.68-.56-1.24-1.25-1.24s-1.26.55-1.26,1.24.56,1.24,1.26,1.24,1.25-.55,1.25-1.24Z"/>
+  <path class="cls-11" d="M22.93,11.83c0-.68-.56-1.24-1.25-1.24s-1.26.55-1.26,1.24.56,1.24,1.26,1.24,1.25-.55,1.25-1.24Z"/>
+  <path class="cls-11" d="M13.23,3.44c0-.68-.56-1.24-1.25-1.24s-1.26.55-1.26,1.24.56,1.24,1.26,1.24,1.25-.55,1.25-1.24Z"/>
+  <path class="cls-11" d="M3.2,11.83c0-.68-.56-1.24-1.25-1.24s-1.26.55-1.26,1.24.56,1.24,1.26,1.24,1.25-.55,1.25-1.24Z"/>
+  <g>
+    <path class="cls-10" d="M14.34,15.62c-1.12,1.38-3.17,1.6-4.56.49-1.4-1.11-1.62-3.13-.5-4.51,1.12-1.38,3.17-1.6,4.56-.49,1.4,1.11,1.62,3.13.5,4.51Z"/>
+    <polygon class="cls-7" points="11.81 19.38 12.51 17.53 11.81 17.53 11.11 17.53 11.81 19.38"/>
+    <polygon class="cls-8" points="15.94 17.69 15.11 15.9 14.62 16.38 14.12 16.87 15.94 17.69"/>
+    <polygon class="cls-4" points="7.68 9.53 9.5 10.35 9 10.84 8.51 11.33 7.68 9.53"/>
+    <polygon class="cls-1" points="7.68 17.69 9.5 16.87 9 16.38 8.51 15.9 7.68 17.69"/>
+    <polygon class="cls-3" points="15.94 9.53 15.11 11.33 14.62 10.84 14.12 10.35 15.94 9.53"/>
+    <polygon class="cls-2" points="5.97 13.61 7.84 14.3 7.84 13.61 7.84 12.92 5.97 13.61"/>
+    <polygon class="cls-5" points="17.65 13.61 15.78 14.3 15.78 13.61 15.78 12.92 17.65 13.61"/>
+    <polygon class="cls-6" points="11.81 7.84 12.51 9.69 11.81 9.69 11.11 9.69 11.81 7.84"/>
+  </g>
+</svg>

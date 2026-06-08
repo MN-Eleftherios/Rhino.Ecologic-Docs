@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Param_Hexagon" data-name="Param Hexagon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 24 24">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: url(#Unbenannter_Verlauf_232-2);
+      }
+
+      .cls-1, .cls-2, .cls-3, .cls-4 {
+        stroke: #333;
+        stroke-miterlimit: 10;
+      }
+
+      .cls-1, .cls-2, .cls-4 {
+        stroke-width: .5px;
+      }
+
+      .cls-2 {
+        fill: url(#Unbenannter_Verlauf_232-3);
+      }
+
+      .cls-3 {
+        fill: url(#Unbenannter_Verlauf_232-4);
+        stroke-width: .75px;
+      }
+
+      .cls-4 {
+        fill: url(#Unbenannter_Verlauf_232);
+      }
+    </style>
+    <linearGradient id="Unbenannter_Verlauf_232" data-name="Unbenannter Verlauf 232" x1="2.25" y1="17.51" x2="4.18" y2="17.51" gradientUnits="userSpaceOnUse">
+      <stop offset=".16" stop-color="#fbd9d4"/>
+      <stop offset="1" stop-color="#f0a3a3" stop-opacity=".9"/>
+    </linearGradient>
+    <linearGradient id="Unbenannter_Verlauf_232-2" data-name="Unbenannter Verlauf 232" x1="5.49" y1="15.77" x2="7.41" y2="15.77" xlink:href="#Unbenannter_Verlauf_232"/>
+    <linearGradient id="Unbenannter_Verlauf_232-3" data-name="Unbenannter Verlauf 232" x1="8.79" y1="18.64" x2="10.71" y2="18.64" xlink:href="#Unbenannter_Verlauf_232"/>
+    <linearGradient id="Unbenannter_Verlauf_232-4" data-name="Unbenannter Verlauf 232" x1="10.49" y1="8.52" x2="21.77" y2="8.52" xlink:href="#Unbenannter_Verlauf_232"/>
+  </defs>
+  <rect class="cls-4" x="2.25" y="13.19" width="1.93" height="8.64"/>
+  <rect class="cls-1" x="5.49" y="9.71" width="1.93" height="12.12"/>
+  <rect class="cls-2" x="8.79" y="15.45" width="1.93" height="6.38"/>
+  <polygon class="cls-3" points="10.49 12.7 14.79 8 18.67 8.87 21.77 4.34 21.77 12.62 10.49 12.7"/>
+</svg>

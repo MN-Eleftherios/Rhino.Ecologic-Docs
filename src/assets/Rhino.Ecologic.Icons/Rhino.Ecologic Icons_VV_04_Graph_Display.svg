@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Param_Hexagon" data-name="Param Hexagon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 24 24">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: url(#Unbenannter_Verlauf_170-2);
+      }
+
+      .cls-1, .cls-2, .cls-3, .cls-4, .cls-5 {
+        stroke: #333;
+        stroke-miterlimit: 10;
+      }
+
+      .cls-1, .cls-2, .cls-5 {
+        stroke-width: .3px;
+      }
+
+      .cls-2 {
+        fill: url(#Unbenannter_Verlauf_170-3);
+      }
+
+      .cls-3 {
+        fill: url(#Unbenannter_Verlauf_327-2);
+        stroke-width: .75px;
+      }
+
+      .cls-4 {
+        fill: url(#Unbenannter_Verlauf_327);
+        stroke-width: .5px;
+      }
+
+      .cls-5 {
+        fill: url(#Unbenannter_Verlauf_170);
+      }
+    </style>
+    <radialGradient id="Unbenannter_Verlauf_327" data-name="Unbenannter Verlauf 327" cx="16.95" cy="8.41" fx="16.95" fy="8.41" r="1.09" gradientUnits="userSpaceOnUse">
+      <stop offset=".16" stop-color="#fbd9d4"/>
+      <stop offset="1" stop-color="#a6c176" stop-opacity=".9"/>
+    </radialGradient>
+    <radialGradient id="Unbenannter_Verlauf_327-2" data-name="Unbenannter Verlauf 327" cx="16.95" cy="8.41" fx="16.95" fy="8.41" r="4.6" xlink:href="#Unbenannter_Verlauf_327"/>
+    <linearGradient id="Unbenannter_Verlauf_170" data-name="Unbenannter Verlauf 170" x1="2.37" y1="15.87" x2="5.14" y2="15.87" gradientUnits="userSpaceOnUse">
+      <stop offset=".19" stop-color="#fbd9d4" stop-opacity=".8"/>
+      <stop offset="1" stop-color="#f0a3a3" stop-opacity=".9"/>
+    </linearGradient>
+    <linearGradient id="Unbenannter_Verlauf_170-2" data-name="Unbenannter Verlauf 170" x1="7.02" y1="13.36" x2="9.79" y2="13.36" xlink:href="#Unbenannter_Verlauf_170"/>
+    <linearGradient id="Unbenannter_Verlauf_170-3" data-name="Unbenannter Verlauf 170" x1="11.77" y1="17.49" x2="14.54" y2="17.49" xlink:href="#Unbenannter_Verlauf_170"/>
+  </defs>
+  <path class="cls-4" d="M16.93,7.32c.62,0,1.12.5,1.1,1.11-.01.62-.53,1.1-1.15,1.07-.33-.02-.55-.13-.77-.37-.1-.12-.17-.24-.22-.39-.02-.07-.04-.14-.04-.21,0-.02.02-.01.03-.01.02,0,.03,0,.05,0,.03,0,.07,0,.1,0,.63,0,1.08-.61.89-1.21Z"/>
+  <path class="cls-3" d="M11.35,8.41c1.12-2.04,3.26-3.31,5.59-3.31,1.2,0,2.22.28,3.25.89.51.3.96.66,1.38,1.1.19.2.37.41.53.64.08.11.15.22.23.33.04.06.07.11.11.17.02.03.03.06.05.09,0,.01.02.03.03.04,0,.01.04.02.02.05-2.42,4.42-8.77,4.42-11.19,0ZM18.72,9.56c.63-.98.35-2.29-.64-2.93-.98-.63-2.29-.35-2.93.64-.63.98-.35,2.29.64,2.93.98.63,2.29.35,2.93-.64Z"/>
+  <rect class="cls-5" x="2.37" y="9.65" width="2.77" height="12.43"/>
+  <rect class="cls-1" x="7.02" y="4.64" width="2.77" height="17.44"/>
+  <rect class="cls-2" x="11.77" y="12.9" width="2.77" height="9.18"/>
+</svg>

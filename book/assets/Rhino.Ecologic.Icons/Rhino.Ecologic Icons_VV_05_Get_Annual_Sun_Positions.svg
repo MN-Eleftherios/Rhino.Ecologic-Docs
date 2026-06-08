@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Lines" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 24 24">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: url(#Unbenannter_Verlauf_327-5);
+      }
+
+      .cls-1, .cls-2, .cls-3, .cls-4, .cls-5, .cls-6, .cls-7, .cls-8, .cls-9, .cls-10 {
+        stroke: #333;
+      }
+
+      .cls-1, .cls-2, .cls-3, .cls-4, .cls-5, .cls-6, .cls-7, .cls-9, .cls-10 {
+        stroke-miterlimit: 10;
+      }
+
+      .cls-1, .cls-2, .cls-3, .cls-4, .cls-5, .cls-6, .cls-8, .cls-9, .cls-10 {
+        stroke-width: .3px;
+      }
+
+      .cls-2 {
+        fill: url(#Unbenannter_Verlauf_327-7);
+      }
+
+      .cls-3 {
+        fill: url(#Unbenannter_Verlauf_327-6);
+      }
+
+      .cls-4 {
+        fill: url(#Unbenannter_Verlauf_327-8);
+      }
+
+      .cls-5 {
+        fill: url(#Unbenannter_Verlauf_327-2);
+      }
+
+      .cls-6 {
+        fill: url(#Unbenannter_Verlauf_327-3);
+      }
+
+      .cls-7 {
+        fill: url(#Unbenannter_Verlauf_327-4);
+        stroke-width: .75px;
+      }
+
+      .cls-8 {
+        fill: none;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+      }
+
+      .cls-9 {
+        fill: url(#Unbenannter_Verlauf_327);
+      }
+
+      .cls-10 {
+        fill: #afc698;
+      }
+
+      .cls-11 {
+        fill: #333;
+      }
+    </style>
+    <radialGradient id="Unbenannter_Verlauf_327" data-name="Unbenannter Verlauf 327" cx="15.23" cy="12.52" fx="15.23" fy="12.52" r=".88" gradientUnits="userSpaceOnUse">
+      <stop offset=".16" stop-color="#fbd9d4"/>
+      <stop offset="1" stop-color="#a6c176" stop-opacity=".9"/>
+    </radialGradient>
+    <radialGradient id="Unbenannter_Verlauf_327-2" data-name="Unbenannter Verlauf 327" cx="12.09" cy="10.88" fx="12.09" fy="10.88" r=".8" xlink:href="#Unbenannter_Verlauf_327"/>
+    <radialGradient id="Unbenannter_Verlauf_327-3" data-name="Unbenannter Verlauf 327" cx="8.95" fx="8.95" r=".88" xlink:href="#Unbenannter_Verlauf_327"/>
+    <radialGradient id="Unbenannter_Verlauf_327-4" data-name="Unbenannter Verlauf 327" cx="12.09" cy="15.66" fx="12.09" fy="15.66" r="3.16" gradientTransform="translate(9.36 -3.94) rotate(29.72)" xlink:href="#Unbenannter_Verlauf_327"/>
+    <radialGradient id="Unbenannter_Verlauf_327-5" data-name="Unbenannter Verlauf 327" cx="7.31" cy="15.66" fx="7.31" fy="15.66" r=".8" xlink:href="#Unbenannter_Verlauf_327"/>
+    <radialGradient id="Unbenannter_Verlauf_327-6" data-name="Unbenannter Verlauf 327" cx="12.09" cy="20.44" fx="12.09" fy="20.44" r=".8" xlink:href="#Unbenannter_Verlauf_327"/>
+    <radialGradient id="Unbenannter_Verlauf_327-7" data-name="Unbenannter Verlauf 327" cy="18.8" fy="18.8" xlink:href="#Unbenannter_Verlauf_327"/>
+    <radialGradient id="Unbenannter_Verlauf_327-8" data-name="Unbenannter Verlauf 327" cx="8.95" cy="18.8" fx="8.95" fy="18.8" r=".88" xlink:href="#Unbenannter_Verlauf_327"/>
+  </defs>
+  <path class="cls-8" d="M22.84,14.66c-.2-6.81-4.93-12.27-10.75-12.27S1.54,7.85,1.35,14.66"/>
+  <path class="cls-8" d="M22.84,14.66c-.2-3.66-4.93-6.58-10.75-6.58S1.54,11,1.35,14.66"/>
+  <path class="cls-8" d="M22.84,14.66c-.2-5.45-4.93-9.81-10.75-9.81S1.54,9.21,1.35,14.66"/>
+  <polygon class="cls-9" points="16.12 11.64 15.31 13.41 14.83 12.93 14.35 12.45 16.12 11.64"/>
+  <polygon class="cls-5" points="12.09 9.97 12.77 11.8 12.09 11.8 11.41 11.8 12.09 9.97"/>
+  <polygon class="cls-6" points="8.07 11.64 9.84 12.45 9.36 12.93 8.88 13.41 8.07 11.64"/>
+  <polygon class="cls-10" points="17.78 15.66 15.96 16.34 15.96 15.66 15.96 14.98 17.78 15.66"/>
+  <circle class="cls-7" cx="12.09" cy="15.66" r="3.16" transform="translate(-6.18 8.06) rotate(-29.72)"/>
+  <polygon class="cls-1" points="6.4 15.66 8.22 16.34 8.22 15.66 8.22 14.98 6.4 15.66"/>
+  <polygon class="cls-3" points="12.09 21.36 12.77 19.53 12.09 19.53 11.41 19.53 12.09 21.36"/>
+  <polygon class="cls-2" points="16.12 19.69 15.31 17.92 14.83 18.4 14.35 18.88 16.12 19.69"/>
+  <polygon class="cls-4" points="8.07 19.69 9.84 18.88 9.36 18.4 8.88 17.92 8.07 19.69"/>
+  <path class="cls-11" d="M22.54,11.03c0-.68-.55-1.22-1.22-1.22s-1.22.55-1.22,1.22.55,1.22,1.22,1.22,1.22-.55,1.22-1.22Z"/>
+  <path class="cls-11" d="M18.11,6.07c0-.68-.55-1.22-1.22-1.22s-1.22.55-1.22,1.22.55,1.22,1.22,1.22,1.22-.55,1.22-1.22Z"/>
+  <path class="cls-11" d="M13.16,2.57c0-.68-.55-1.22-1.22-1.22s-1.22.55-1.22,1.22.55,1.22,1.22,1.22,1.22-.55,1.22-1.22Z"/>
+  <path class="cls-11" d="M8.03,6.27c0-.68-.55-1.22-1.22-1.22s-1.22.55-1.22,1.22.55,1.22,1.22,1.22,1.22-.55,1.22-1.22Z"/>
+  <path class="cls-11" d="M4.21,11.03c0-.68-.55-1.22-1.22-1.22s-1.22.55-1.22,1.22.55,1.22,1.22,1.22,1.22-.55,1.22-1.22Z"/>
+</svg>

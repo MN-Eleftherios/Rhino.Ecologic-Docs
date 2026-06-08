@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Ebene_1" data-name="Ebene 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 341.83 256.62">
+  <defs>
+    <style>
+      .cls-1, .cls-2, .cls-3 {
+        fill: none;
+      }
+
+      .cls-4 {
+        font-family: Avenir-Book, Avenir;
+        font-size: 18.98px;
+      }
+
+      .cls-4, .cls-5 {
+        fill: #fff;
+      }
+
+      .cls-6 {
+        fill: #fac9a9;
+        font-family: Avenir-BlackOblique, Avenir;
+        font-size: 20.1px;
+        font-style: oblique;
+        font-weight: 800;
+      }
+
+      .cls-2 {
+        stroke-dasharray: 3.96 3.96;
+      }
+
+      .cls-2, .cls-3 {
+        stroke: #fff;
+        stroke-miterlimit: 10;
+      }
+
+      .cls-7 {
+        clip-path: url(#clippath);
+      }
+    </style>
+    <clipPath id="clippath">
+      <rect class="cls-1" x="7.72" y="55.37" width="151.19" height="192.43"/>
+    </clipPath>
+  </defs>
+  <g class="cls-7">
+    <image width="3200" height="2400" transform="translate(-79.16 53.39) scale(.11)" xlink:href="../../../03 Research/25.012.03 DLA paper 2025/Building_2.png"/>
+  </g>
+  <g>
+    <line class="cls-3" x1="157.52" y1="144.11" x2="159.52" y2="144.11"/>
+    <line class="cls-2" x1="163.48" y1="144.11" x2="296.13" y2="144.11"/>
+    <line class="cls-3" x1="298.11" y1="144.11" x2="300.11" y2="144.11"/>
+    <polygon class="cls-5" points="298.65 149.1 307.29 144.11 298.65 139.12 298.65 149.1"/>
+  </g>
+  <text class="cls-4" transform="translate(40.7 37.54)"><tspan x="0" y="0">3D MODEL </tspan></text>
+  <text class="cls-6" transform="translate(156.07 131.9)"><tspan x="0" y="0">Rhino.Ecologic®</tspan></text>
+</svg>

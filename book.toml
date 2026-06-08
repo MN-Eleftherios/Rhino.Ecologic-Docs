@@ -1,0 +1,5 @@
+[book]
+title = "Rhino.Ecologic Docs"
+authors = ["Verena Vogler" ,"Jens Joschinski" ,"Eleftherios Kourkopoulos"]
+language = "en"
+src = "src"

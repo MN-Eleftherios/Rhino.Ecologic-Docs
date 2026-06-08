@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Lines" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 24 24">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: url(#Unbenannter_Verlauf_333-2);
+      }
+
+      .cls-1, .cls-2, .cls-3, .cls-4, .cls-5, .cls-6, .cls-7, .cls-8 {
+        stroke: #333;
+        stroke-miterlimit: 10;
+      }
+
+      .cls-1, .cls-4, .cls-5, .cls-6, .cls-7, .cls-8 {
+        stroke-width: .3px;
+      }
+
+      .cls-2 {
+        fill: url(#Unbenannter_Verlauf_327-2);
+      }
+
+      .cls-2, .cls-9 {
+        stroke-width: .5px;
+      }
+
+      .cls-3 {
+        fill: url(#Unbenannter_Verlauf_327-3);
+        stroke-width: .75px;
+      }
+
+      .cls-4 {
+        fill: url(#Winter-Violett_radial-2);
+      }
+
+      .cls-9 {
+        fill: none;
+        stroke: #1a1a1a;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+      }
+
+      .cls-5 {
+        fill: url(#Unbenannter_Verlauf_333);
+      }
+
+      .cls-6 {
+        fill: url(#Unbenannter_Verlauf_327);
+      }
+
+      .cls-7 {
+        fill: url(#Winter-Violett_radial);
+      }
+
+      .cls-8 {
+        fill: url(#Unbenannter_Verlauf_19);
+      }
+    </style>
+    <radialGradient id="Unbenannter_Verlauf_19" data-name="Unbenannter Verlauf 19" cx="12.16" cy="2.27" fx="12.16" fy="2.27" r="1.04" gradientUnits="userSpaceOnUse">
+      <stop offset=".16" stop-color="#fbf6e2"/>
+      <stop offset="1" stop-color="#b9a794" stop-opacity=".9"/>
+    </radialGradient>
+    <radialGradient id="Unbenannter_Verlauf_333" data-name="Unbenannter Verlauf 333" cx="19.16" cy="3.59" fx="19.16" fy="3.59" r="1.04" gradientUnits="userSpaceOnUse">
+      <stop offset=".16" stop-color="#fce8b9"/>
+      <stop offset="1" stop-color="#f0a3a3" stop-opacity=".9"/>
+    </radialGradient>
+    <radialGradient id="Winter-Violett_radial" data-name="Winter-Violett radial" cx="5.17" cy="3.59" fx="5.17" fy="3.59" r=".95" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#ebedf6"/>
+      <stop offset=".5" stop-color="#d8dcec"/>
+      <stop offset="1" stop-color="#c3c9e0"/>
+    </radialGradient>
+    <radialGradient id="Unbenannter_Verlauf_333-2" data-name="Unbenannter Verlauf 333" cx="12.16" cy="21.45" fx="12.16" fy="21.45" r="1.04" xlink:href="#Unbenannter_Verlauf_333"/>
+    <radialGradient id="Winter-Violett_radial-2" data-name="Winter-Violett radial" cx="19.16" cy="20.13" fx="19.16" fy="20.13" r="1.04" xlink:href="#Winter-Violett_radial"/>
+    <radialGradient id="Unbenannter_Verlauf_327" data-name="Unbenannter Verlauf 327" cx="5.17" cy="20.13" fx="5.17" fy="20.13" r="1.04" gradientUnits="userSpaceOnUse">
+      <stop offset=".16" stop-color="#fbd9d4"/>
+      <stop offset="1" stop-color="#a6c176" stop-opacity=".9"/>
+    </radialGradient>
+    <radialGradient id="Unbenannter_Verlauf_327-2" data-name="Unbenannter Verlauf 327" cx="12.17" cy="11.86" fx="12.17" fy="11.86" r="1.47" xlink:href="#Unbenannter_Verlauf_327"/>
+    <radialGradient id="Unbenannter_Verlauf_327-3" data-name="Unbenannter Verlauf 327" cx="12.17" cy="11.86" fx="12.17" fy="11.86" r="6.18" xlink:href="#Unbenannter_Verlauf_327"/>
+  </defs>
+  <line class="cls-9" x1="16.43" y1="6.79" x2="18.47" y2="4.37"/>
+  <line class="cls-9" x1="12.16" y1="5.84" x2="12.16" y2="3.31"/>
+  <line class="cls-9" x1="12.16" y1="5.84" x2="12.16" y2="3.31"/>
+  <line class="cls-9" x1="7.89" y1="6.79" x2="5.86" y2="4.37"/>
+  <line class="cls-9" x1="16.43" y1="16.93" x2="18.47" y2="19.35"/>
+  <line class="cls-9" x1="7.89" y1="16.93" x2="5.86" y2="19.35"/>
+  <line class="cls-9" x1="12.16" y1="17.88" x2="12.16" y2="20.41"/>
+  <line class="cls-9" x1="12.16" y1="17.88" x2="12.16" y2="20.41"/>
+  <path class="cls-8" d="M12.16,1.23c-.58,0-1.04.47-1.04,1.04s.47,1.04,1.04,1.04,1.04-.47,1.04-1.04-.47-1.04-1.04-1.04Z"/>
+  <path class="cls-5" d="M19.16,2.54c.58,0,1.04.47,1.04,1.04s-.47,1.04-1.04,1.04-1.04-.47-1.04-1.04.47-1.04,1.04-1.04Z"/>
+  <path class="cls-7" d="M5.17,2.54c-.58,0-1.04.47-1.04,1.04s.47,1.04,1.04,1.04,1.04-.47,1.04-1.04-.47-1.04-1.04-1.04Z"/>
+  <path class="cls-1" d="M12.16,22.49c-.58,0-1.04-.47-1.04-1.04s.47-1.04,1.04-1.04,1.04.47,1.04,1.04-.47,1.04-1.04,1.04Z"/>
+  <path class="cls-4" d="M19.16,21.18c.58,0,1.04-.47,1.04-1.04s-.47-1.04-1.04-1.04-1.04.47-1.04,1.04.47,1.04,1.04,1.04Z"/>
+  <path class="cls-6" d="M5.17,21.18c-.58,0-1.04-.47-1.04-1.04s.47-1.04,1.04-1.04,1.04.47,1.04,1.04-.47,1.04-1.04,1.04Z"/>
+  <path class="cls-2" d="M12.15,10.39c.83,0,1.5.67,1.48,1.5-.02.83-.71,1.48-1.54,1.44-.44-.02-.74-.17-1.03-.5-.14-.16-.23-.33-.3-.53-.03-.09-.05-.19-.06-.29,0-.03.02-.02.04-.01.02,0,.04,0,.07,0,.04,0,.09,0,.13,0,.85,0,1.46-.81,1.2-1.62Z"/>
+  <path class="cls-3" d="M4.65,11.86c1.51-2.75,4.39-4.45,7.52-4.45,1.62,0,2.98.37,4.37,1.2.69.41,1.3.89,1.85,1.48.26.27.49.56.71.86.11.15.21.29.3.45.05.08.1.15.14.23.02.04.05.08.07.12.01.02.02.04.03.06.01.02.05.03.03.06-3.25,5.94-11.78,5.94-15.04,0ZM14.56,13.4c.85-1.32.47-3.08-.85-3.93-1.32-.85-3.08-.47-3.93.85-.85,1.32-.47,3.08.85,3.93,1.32.85,3.08.47,3.93-.85Z"/>
+</svg>

@@ -1,0 +1,881 @@
+<!DOCTYPE HTML>
+<html lang="en" class="light sidebar-visible" dir="ltr">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>Model Description - Rhino.Ecologic Docs</title>
+
+
+        <!-- Custom HTML head -->
+
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff">
+
+        <link rel="icon" href="favicon-de23e50b.svg">
+        <link rel="shortcut icon" href="favicon-8114d1fc.png">
+        <link rel="stylesheet" href="css/variables-8adf115d.css">
+        <link rel="stylesheet" href="css/general-0392ca55.css">
+        <link rel="stylesheet" href="css/chrome-fc474251.css">
+        <link rel="stylesheet" href="css/print-9e4910d8.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="fonts/fonts-9644e21d.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" id="mdbook-highlight-css" href="highlight-493f70e1.css">
+        <link rel="stylesheet" id="mdbook-tomorrow-night-css" href="tomorrow-night-4c0ae647.css">
+        <link rel="stylesheet" id="mdbook-ayu-highlight-css" href="ayu-highlight-3fdfc3ac.css">
+
+        <!-- Custom theme stylesheets -->
+
+
+        <!-- Provide site root and default themes to javascript -->
+        <script>
+            const path_to_root = "";
+            const default_light_theme = "light";
+            const default_dark_theme = "navy";
+            window.path_to_searchindex_js = "searchindex-924627d6.js";
+        </script>
+        <!-- Start loading toc.js asap -->
+        <script src="toc-9b2a4833.js"></script>
+    </head>
+    <body>
+    <div id="mdbook-help-container">
+        <div id="mdbook-help-popup">
+            <h2 class="mdbook-help-title">Keyboard shortcuts</h2>
+            <div>
+                <p>Press <kbd>←</kbd> or <kbd>→</kbd> to navigate between chapters</p>
+                <p>Press <kbd>S</kbd> or <kbd>/</kbd> to search in the book</p>
+                <p>Press <kbd>?</kbd> to show this help</p>
+                <p>Press <kbd>Esc</kbd> to hide this help</p>
+            </div>
+        </div>
+    </div>
+    <div id="mdbook-body-container">
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script>
+            try {
+                let theme = localStorage.getItem('mdbook-theme');
+                let sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script>
+            const default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? default_dark_theme : default_light_theme;
+            let theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            const html = document.documentElement;
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add("js");
+        </script>
+
+        <input type="checkbox" id="mdbook-sidebar-toggle-anchor" class="hidden">
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script>
+            let sidebar = null;
+            const sidebar_toggle = document.getElementById("mdbook-sidebar-toggle-anchor");
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            } else {
+                sidebar = 'hidden';
+                sidebar_toggle.checked = false;
+            }
+            if (sidebar === 'visible') {
+                sidebar_toggle.checked = true;
+            } else {
+                html.classList.remove('sidebar-visible');
+            }
+        </script>
+
+        <nav id="mdbook-sidebar" class="sidebar" aria-label="Table of contents">
+            <!-- populated by js -->
+            <mdbook-sidebar-scrollbox class="sidebar-scrollbox"></mdbook-sidebar-scrollbox>
+            <noscript>
+                <iframe class="sidebar-iframe-outer" src="toc.html"></iframe>
+            </noscript>
+            <div id="mdbook-sidebar-resize-handle" class="sidebar-resize-handle">
+                <div class="sidebar-resize-indicator"></div>
+            </div>
+        </nav>
+
+        <div id="mdbook-page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                <div id="mdbook-menu-bar-hover-placeholder"></div>
+                <div id="mdbook-menu-bar" class="menu-bar sticky">
+                    <div class="left-buttons">
+                        <label id="mdbook-sidebar-toggle" class="icon-button" for="mdbook-sidebar-toggle-anchor" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="mdbook-sidebar">
+                            <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"/></svg></span>
+                        </label>
+                        <button id="mdbook-theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="mdbook-theme-list">
+                            <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M371.3 367.1c27.3-3.9 51.9-19.4 67.2-42.9L600.2 74.1c12.6-19.5 9.4-45.3-7.6-61.2S549.7-4.4 531.1 9.6L294.4 187.2c-24 18-38.2 46.1-38.4 76.1L371.3 367.1zm-19.6 25.4l-116-104.4C175.9 290.3 128 339.6 128 400c0 3.9 .2 7.8 .6 11.6c1.8 17.5-10.2 36.4-27.8 36.4H96c-17.7 0-32 14.3-32 32s14.3 32 32 32H240c61.9 0 112-50.1 112-112c0-2.5-.1-5-.2-7.5z"/></svg></span>
+                        </button>
+                        <ul id="mdbook-theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-default_theme">Auto</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-ayu">Ayu</button></li>
+                        </ul>
+                        <button id="mdbook-search-toggle" class="icon-button" type="button" title="Search (`/`)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="/ s" aria-controls="mdbook-searchbar">
+                            <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352c79.5 0 144-64.5 144-144s-64.5-144-144-144S64 128.5 64 208s64.5 144 144 144z"/></svg></span>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">Rhino.Ecologic Docs</h1>
+
+                    <div class="right-buttons">
+                        <a href="print.html" title="Print this book" aria-label="Print this book">
+                            <span class=fa-svg id="print-button"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M128 0C92.7 0 64 28.7 64 64v96h64V64H354.7L384 93.3V160h64V93.3c0-17-6.7-33.3-18.7-45.3L400 18.7C388 6.7 371.7 0 354.7 0H128zM384 352v32 64H128V384 368 352H384zm64 32h32c17.7 0 32-14.3 32-32V256c0-35.3-28.7-64-64-64H64c-35.3 0-64 28.7-64 64v96c0 17.7 14.3 32 32 32H64v64c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V384zm-16-88c-13.3 0-24-10.7-24-24s10.7-24 24-24s24 10.7 24 24s-10.7 24-24 24z"/></svg></span>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div id="mdbook-search-wrapper" class="hidden">
+                    <form id="mdbook-searchbar-outer" class="searchbar-outer">
+                        <div class="search-wrapper">
+                            <input type="search" id="mdbook-searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="mdbook-searchresults-outer" aria-describedby="searchresults-header">
+                            <div class="spinner-wrapper">
+                                <span class=fa-svg id="fa-spin"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M304 48c0-26.5-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48s48-21.5 48-48zm0 416c0-26.5-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48s48-21.5 48-48zM48 304c26.5 0 48-21.5 48-48s-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48zm464-48c0-26.5-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48s48-21.5 48-48zM142.9 437c18.7-18.7 18.7-49.1 0-67.9s-49.1-18.7-67.9 0s-18.7 49.1 0 67.9s49.1 18.7 67.9 0zm0-294.2c18.7-18.7 18.7-49.1 0-67.9S93.7 56.2 75 75s-18.7 49.1 0 67.9s49.1 18.7 67.9 0zM369.1 437c18.7 18.7 49.1 18.7 67.9 0s18.7-49.1 0-67.9s-49.1-18.7-67.9 0s-18.7 49.1 0 67.9z"/></svg></span>
+                            </div>
+                        </div>
+                    </form>
+                    <div id="mdbook-searchresults-outer" class="searchresults-outer hidden">
+                        <div id="mdbook-searchresults-header" class="searchresults-header"></div>
+                        <ul id="mdbook-searchresults">
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script>
+                    document.getElementById('mdbook-sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('mdbook-sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#mdbook-sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="mdbook-content" class="content">
+                    <main>
+                        <h1 id="0-preface"><a class="header" href="#0-preface">0 Preface</a></h1>
+<p>The model description follows the ODD (Overview, Design concepts, Details) protocol for describing individual- and
+agent-based models (Grimm et al. 2006), as updated by Grimm et al. (2020).</p>
+<h1 id="1-purpose-and-patterns"><a class="header" href="#1-purpose-and-patterns">1 Purpose and Patterns</a></h1>
+<p>The model aims to predict the presence and temporal change of plant communities in 3dimensional environments. It tracks the number and biomass of plant individuals from multiple species.<br>The main proceesses are 1) tracking of habitat suitability, seperately for each species, based on soil properties, and 2) modeling competition for light via: individual plant growth; a light interception model; conversion of light energy into carbohydrate resources; and allocation of said resources into growth and reproduction. Biomass growth in turn increases light interception and leads to shading of other plants.<br>Habitat suitability, growth and light requirements are species-specific. The species traits are usually inputted by the user; although care is taken to ensure the traits are within reasonable limits, the validity of the model output depends heavily on the quality of the input traits.<br>The simulation is a pure ecological model and does not include evolutionary processes. It is not expected to perform well in highly stochastic environments (e.g. erratic herbivore pressure) or in environments under soil nutrient limitation, as these processes are not included in the model.</p>
+<h1 id="2-entities-state-variables-and-scales"><a class="header" href="#2-entities-state-variables-and-scales">2 Entities, state variables, and scales</a></h1>
+<h2 id="spatial-and-temporal-resolution"><a class="header" href="#spatial-and-temporal-resolution">Spatial and temporal resolution</a></h2>
+<p>This model simulates plant communities in urban areas, in particular on building envelopes. It is envisioned to be used on spatial extents of 10 x 10 m - 200 x 200 m, at input resolution of 1m³, and to simulate 10-200 annual time steps. The model internally uses a finer resolution in z - direction (5 cm) to boost the accuracy of light and shading calculations, but outputs are aggregated to the input resolution.<br>It is a parametric model, meaning the user can change extent and resolution at will, but:</p>
+<ul>
+<li>not all inputs are scaled with resolution yet (e.g. maximum number of plants per voxel), leading to potentially wrong results.</li>
+<li>Seasonal change or leaf senescene are not modelled, so time steps below one year are not supported.</li>
+<li>finer resolutions or larger extents may deplete memory and increase run time.</li>
+</ul>
+<p>In summary, best results are obtained at 1 m³ voxel resolution and annual time steps. If deciding to nevertheless change the spatial resolution, it is advised to adjust the amount of layers (noStrata) to keep a 5 cm resolution in z-direction. A coars resolution in xy-directions (e.g. 10x10m) but fine resolution in z-direction is a compromise that reduces data and memory footprints but not runtime.<br>[<strong>subject to change</strong>; NoStrata and other parameters to scale with resolution in future versions]</p>
+<h2 id="entities"><a class="header" href="#entities">Entities</a></h2>
+<p>This chapter provides a <strong>conceptual</strong> overview of the entities that make up the model. Implementation details may differ in details, but code and concepts are matched wherever possible. For easier understanding of code-concept relationships, differences are indicated by footnotes.</p>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>Entity</th><th>Description</th></tr>
+</thead>
+<tbody>
+<tr><td>Environment</td><td>(urban) habitat containing voxels; light; and seeds that are not (yet) settled in voxels</td></tr>
+<tr><td>Voxel</td><td> a voxel may contain light; soil; and disturbances. A Community is associated with each Voxel that contains soil</td></tr>
+<tr><td>Community<sup>1</sup></td><td>Contains Individuals and seeds of different species. Associated with a voxel and its soil, but individuals can outgrow the voxel boundaries.</td></tr>
+<tr><td>Species/Traits</td><td>A “species” is a set of traits<sup>2,3</sup> defining 1) Life history parameters, 2) resource allocation strategies, 3) seed biology, 4) disturbance response, 5) soil requirements and 6) shape.<sup>2</sup></td></tr>
+<tr><td>Individual</td><td>Roots in soil; located in/across Voxels; can grow, reproduce and die (subject to voxel attributes). Composed of leaf biomass and (belowground) resources. Biomass converts intercepted light into resource, resource is invested in biomass and reproduction. Uses soil and light resources (casting shade), and can be disturbed. Individuals of different species differ in traits.</td></tr>
+</tbody>
+</table>
+</div>
+<p><sup>1</sup> Conceptionally <em>associated with</em> voxel, but coded as <em>component of</em> Voxel.<br><sup>2</sup> “Species” can also represent plant functional type, Functional group or distinct population<br><sup>3</sup> No separate Species class is required in the code. Each individual is associated with one rule set (“belongs to a species”). Pointers to an immutable Traits library are used for performance reasons (flyweight pattern). There are as many Trait instances as species.</p>
+<h3 id="individuals-and-seeds"><a class="header" href="#individuals-and-seeds">Individuals and seeds</a></h3>
+<p>The principle agent is an individual plant. The plant has two life stages: a seed stage and the actual plant individual.</p>
+<p>The individual has the following attributes:</p>
+<ul>
+<li>it lives: it grows, reproduces and dies.</li>
+<li>it is photoautotrophic: it converts light into a (carbohydrate) resource; it lives from these resources and produces green (photosynthetically active) biomass</li>
+<li>it has a shape: it has a geometric representation, being able to e.g. cast a shade with its biomass</li>
+<li>it needs a place to live: the soil determines whether a plant can grow at all (habitat is suitable). Soil (space) is a limiting resource.</li>
+<li>it interacts with the environment: Stressors can affect each of the above properties, i.e. cause mortality, deplete resources or affect the soil.</li>
+</ul>
+<p>The seeds have the following attributes:</p>
+<ul>
+<li>they live: they can die, or they can be converted into individuals</li>
+<li>they can form seed banks: Seeds produced in autumn may germinate the next year, or they can stay dormant and be buried in the soil for many years. The mortality of dormant seeds is lower than the mortality of active seeds that attempt to germinate (germination rate)</li>
+<li>they need space: the soil can accomodate a potentially large, but not infinite number of seeds.</li>
+</ul>
+<p>The attributes are naturally interdependent. Yet, in the model the interdependencies are kept to a minimum, both to constrain the logical complexity of the model, and to keep the model modular and modifiable. The following interdependencies exist:</p>
+<ul>
+<li>plants only germinate on suitable soil types; they stop collecting resources if the soil becomes unsuitable;</li>
+<li>plants that run out of resources die;</li>
+<li>seed production (fecundity) only starts at maturity age, and requires resources.</li>
+<li>the general shape of the plant affects where green biomass will be located. This affects resource acquisition and tolerance to shading.</li>
+</ul>
+<p>The following interdependencies were on purpose not implemented:</p>
+<ul>
+<li>no maternal effects: life-history (age, height) and resource state do not affect seed biology, and plant growth is not affected by seed states.</li>
+<li>no phenotypic plasticity: age does not affect resource acquisition, and resource availability does not affect height growth.</li>
+<li>no soil quality: resource acquisition does not scale with soil variables, and soil is not conditioned by the plants or seeds living in it.</li>
+</ul>
+<p>In particular, the plant’s bounding box / bounding box growth (growth model) are entirely deterministic and unaffected by resources; the biomass within that bounding box, and hence the shade it casts, may however vary by plant health state.<br>Disturbance is not fully implemented, but it may independently affect resources and/or biomass, life history (height or mortality), seeds and soil. Priority will be given to disturbance affecting biomass and resources.</p>
+<h3 id="speciestraits"><a class="header" href="#speciestraits">Species/Traits</a></h3>
+<p>There is no single optimal strategy for life history, resource allocation and other attributes, rather the optimal strategy depends on the environment and the other individuals in the community. Hence, different trait combinations (species) have evolved. This model does NOT simulate inter-individual variation and/or inheritance (evolutionary model), but rather assumes that each individual belongs to a certain strategy type (species) with fixed traits. Individuals vary in states (e.g. current age), but there is no intraspecific trait variation (e.g. life span), no evolution and no phenotypic plasticity. Trait types may be envisioned as species, but can also be genera, distinct subpopulations, functional groups or functional types.<br>According to the attributes of Individuals and seeds given above, traits that define an individual fall into 6 categories:</p>
+<ol>
+<li>Life history parameters. Life history determines key demographics (maturity onset, lifespan) and growth.</li>
+<li>resource allocation strategies. Resource allocation determines the relative investment into seeds and biomass gain (e.g. light conversion efficiency, fecundity).</li>
+<li>soil requirements. Plants can only grow on certain types of soil, and the soil needs to meet some minimum requirements (minimum depth).</li>
+<li>disturbance response. Disturbance response defines which types of disturbance (“rabbit herbivory”, “tree pruning”) affect the plant, and how strongly.</li>
+<li>seed biology. The seed biology determines the mortality of seeds, dormancy attributes, and germination rates.</li>
+<li>shape. The shape determines the spatial distribution of biomass.</li>
+</ol>
+<p>For details on the state variables, see section 7 (“submodels”) or UML diagram.</p>
+<h3 id="voxels"><a class="header" href="#voxels">Voxels</a></h3>
+<p>A voxel is a three-dimensional object that is embedded in a 3D-landscape. In our model it contains a soil, a plant community, and light (and disturbance, to add).</p>
+<p><em>Soil</em><br>Soil is a shared resource that is used by the Individuals, especially upon germination. It has a limited capacity to host plant individuals and its state may change over time. Some attributes are set at initialization and cannot change throughout the simulation run.<br>Soil is not represented as 2- or 3Dimensional object, but as an object with one-dimensional properties (depth, type, capacity, water availability); stratification of soil types is not yet included.<br>Although technically possible, it is currently not expected that a single soil spans multiple voxels. Future extensions (e.g. nutrient or water flow) may have to carefully revise this decision.</p>
+<p><em>The plant community</em><br>The plant community is made up of the Individuals and seeds. Although the plant community and all its individuals have their home in one voxel, they can outgrow it in both x/y and z-direction (see section “environment”).</p>
+<h3 id="environment"><a class="header" href="#environment">Environment</a></h3>
+<p>The Environment contains Voxels in a spatial configuration, and plant individuals live in, and across, these Voxels. The environment takes care of calculating the amount of plant material in each voxel; intersecting light rays with the plant material; and attributing the according light energy to the plants. Light calculations also take the (built) 3D environment into account. For details see submodel “light model”<br>In addition, the Environment contains a pool of “unsettled” seeds. After each time step, the seeds produced by all mature individuals are collected. They do not immediately sink to the ground of their home voxels, but are reshuffled and distributed (randomly and uniformly) across all voxels.</p>
+<p><em>Disturbance</em> to add</p>
+<h3 id="notes"><a class="header" href="#notes">Notes</a></h3>
+<p>There are a few implementation-specific notes affecting the general logic of the model:</p>
+<ul>
+<li>The model is written with extensibility in mind. Replacing a submodel (e.g. resource calculation) should have minimal effects on the functionality of the remaining model.</li>
+<li>Soil has a “capacity” that is used to simulate competition for space, but no other attributes that may be depleted. Hence, plants of different types compete for the same singular resource.</li>
+<li>disturbance is not implemented yet.</li>
+<li>Raytracing is not implemented yet, and the current calculations are confusing in some edge cases (e.g. high plants growing next to a wall, growing from shaded into unshaded voxels; plants growing on south-exposed facades being shaded by plants growing above)</li>
+<li>Due to the existence of plant “home” voxels and individual soils that do not cross voxel boundaries, the minimum spatial resolution must be at the largest plant’s soil size requirement (i.e. stem diameter, or core root area). Plants cannot take a soil capacities from multiple voxels.</li>
+</ul>
+<h1 id="3-process-overview-and-scheduling"><a class="header" href="#3-process-overview-and-scheduling">3. Process overview and scheduling</a></h1>
+<p><img src="doc/process_overview.jpg" alt="Process overview"></p>
+<ol>
+<li>A Graph with Voxels is created prior to running the model. The voxels store environmental attributes that are required by the model.</li>
+<li>The model is initialized with the graph and further configuration settings. It reads the trait definitions from a default file (or use data passed in via the plant library component), create a log file and perform checks on the input data. It further runs the 0th time step and discards the results.</li>
+<li>Once constructed, the model runs for a time step. This includes a simulation step (see fig. 1), and adding the results (volume, species names, biomasses and abundances) to the voxels.</li>
+<li>Step 3 is repeated for the desired number of time steps.</li>
+</ol>
+<p>A time step consists of the following steps (see fig. 1):</p>
+<ul>
+<li>add and disperse seeds in the environment. A fixed seed rain “from the outside” is also added.</li>
+<li>move seeds from global environment pool to individual voxels.</li>
+<li>calculate plant spillage, i.e. locate plant material in the correct voxels according to plant shape and size.</li>
+<li>calculate light for each voxel, and distribute it to the plants</li>
+<li>update the plant community. The process includes aging, resource allocation, potentially death, production of new seeds and germination of assigned seeds.</li>
+<li>the seed output is limited to max. twice the nummber of voxels; the seeds are added to the environment.</li>
+</ul>
+<p>The order ensures that new seeds may land in a cell and germinate in the same time step; but that the plant cannot additionally grow the same time step. It is also ensured that newly produced seeds disperse, but cannot germinate in the same time step.</p>
+<p>Individual steps (such as seed dispersal) can be forced off, but this is usually unrealistic and not recommended.</p>
+<h1 id="4-design-concepts"><a class="header" href="#4-design-concepts">4. Design concepts</a></h1>
+<h2 id="basic-principles"><a class="header" href="#basic-principles">Basic principles</a></h2>
+<p>The model combines habitat filtering approaches with process-based modelling, with particular focus on competition for light. The soil and nutrient balance as well as disturbance are on purpose left as simple and general as possible. The model is, however, written in a way that allows later extension.</p>
+<h2 id="emergence-and-interaction"><a class="header" href="#emergence-and-interaction">Emergence and interaction</a></h2>
+<p>The key outcome of the simulation is the spatiotemporal change of community patterns, which emerges from the interaction of individuals within each voxel, particularly competition for light. Plant material outgrowing a voxel (i.e., large trees) can also cause very localized patterning. Abiotic factors (soil depth, soil class) further impose a general community structure via habitat filtering. The abiotic factors together lead to the emergence of complex environment-community relationships.</p>
+<h2 id="adaptation"><a class="header" href="#adaptation">Adaptation</a></h2>
+<p>The  model does not contain any direct objective-seeking mechanisms. The agents do not possess the ability to choose among two or more alternative behaviors e.g. via learning or condition-dependent rules (phenotypic plasticity).</p>
+<h2 id="objectives"><a class="header" href="#objectives">Objectives</a></h2>
+<p>The model does not simulate adaptive behavior (fitness/biological evolution). The rules by which agents respond to the environment (the “genotypes” or traits) are instead provided by the user (default or via plant library component).</p>
+<h2 id="interaction"><a class="header" href="#interaction">Interaction</a></h2>
+<p>Individual plants interact with one another, directly or indirectly, especially in the competition for light, which is explained in detail in the submodel section. Briefly, growth and death of plants continually changes light conditions, and, subject to light tolerances, plants may be outcompeted and die. This leads to turnover of plant communities.
+There is further simple competition for soil as a shared resource.</p>
+<h2 id="stochasticity"><a class="header" href="#stochasticity">Stochasticity</a></h2>
+<p>The model contains the following stochastic processes:</p>
+<ol>
+<li>whenever there is free space in a voxel, plant individuals are picked randomly from the pool of suitable types, until each voxel’s capacity is reached. Their initial biomass is fixed (non-random).</li>
+<li>when the total plant biomass exceeds a voxel’s capacity, a random set of plant material is chooosen to lie “on top” and receive the light. The granularity of the draw (how much plant material to choose per draw/number of draws) can be adjusted.</li>
+<li>At the end of the time step, all plant seeds are pooled and randomly redistributed over the simulation environment, together with the seeds that enter from the region (seed rain).
+Growth rates, lifespan and soil suitability are fixed properties without random component.</li>
+</ol>
+<h1 id="5-input-and-output-data"><a class="header" href="#5-input-and-output-data">5. Input and Output Data</a></h1>
+<p>A graph with Voxels is prepared prior to running the model, and it contains all neccessary information. At the moment, the information contains soil depth, soil type, light and precipitation in each voxel. Additionally, there are configuration settings and definitions of the Plant species (Traits). The model updates the voxels as it runs, adding for each time step:</p>
+<ul>
+<li>the total biomass of all plants rooting in the voxel, separately for each species</li>
+<li>the total abundance of all plants rooting in the voxel, separately for each species</li>
+<li>the total plant volume (independently of where plants root), summed across all species.</li>
+</ul>
+<h1 id="6-initialization"><a class="header" href="#6-initialization">6. Initialization</a></h1>
+<p>At initalization each cell is filled with the according input data and with a starting Community. The Community created by randomly drawing from a list of suitable types until the capacity (or starting population) size is reached; an according seed pool is also created. Individuals are created as 0.1 year old plant (i.e. having roots, height and diameters of a 0.1-year old) and with enough resources to survive the first year.</p>
+<p>The model runs additionally 1 time step upon creation, discarding the 0th time step.</p>
+<h1 id="7-submodels"><a class="header" href="#7-submodels">7. Submodels</a></h1>
+<p>There are five independent submodels to simulate plant life (growth, resources, habitat suitability, shape and disturbance); one submodel for plant seeds; and two environmental submodels that handle seed dispersal and light calculations/raycasting.<br>Briefly put, the habitat suitability model restricts where a plant can grow; the growth model simulates change in plant growth; the resource model simulates the change in biomass; the shape model maps the plant biomass into 3d space; and the light model intersects the 3D plant with light beams, feeding the resource model with energy. The resource model additionally creates seeds that are dispersed by the seed dispersal model, potentially creating new individuals.</p>
+<h2 id="plant-growth"><a class="header" href="#plant-growth">Plant growth</a></h2>
+<p>This submodel lets the plant age, mature and grow. The life history traits defining the plant’s growth are:</p>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>Type</th><th>Trait</th><th>Description</th></tr>
+</thead>
+<tbody>
+<tr><td>float</td><td>MatAge</td><td>Age (in years) at which the plant reaches maturity and can start reproducing. Also used to estimate when plant growth decelerates</td></tr>
+<tr><td>int</td><td>LifeSpan</td><td>Maximum age (in years) that a plant can reach, if not dying of other causes</td></tr>
+</tbody>
+</table>
+</div>
+<p>The plant’s age is incremented in every growth cycle; if it exceeds the life span, it dies. Age and life span are entirely deterministic (no random deviations or inter-individual variation).<br>The growth is resource-independent and uses a “TI form” of a Gompertz growth function (Tjorve 2017):<br><code>W(t) = A * exp(-exp(-KG * (t - TI)))</code> with with A= maximum size, TI = inflection point, KG = slope at inflection (growth rate), t = age<br>As inflection point we used the age of maturity (when plants invest into seeds, their growth decelerates). The growth rate is arbitrarily set to 1.998 / (LifeSpan - MatAge). The growth rate (i.e. slope, not max) is further reduced to 20% when water provision is insufficient (see habitat suitability submodel).
+Plants can reproduce in the year they reach maturity, i.e. when <code>age &gt;= int(matAge)</code> [float precision is required for the Gompertz function though].<br>The growth is exposed as dimensionless variable (percentage of max) to the other submodels; these then calculate specific variables (like biomass, height, surface area) based on the general growth pattern and environment-specific effects.</p>
+<p><img src="doc/age.jpg" alt="aging"></p>
+<h2 id="habitat-suitability"><a class="header" href="#habitat-suitability">Habitat suitability</a></h2>
+<p>The habitat suitability submodel checks for each plant type in which cells it can theoretically occur (habitat filtering).
+The soil requirements defining the habitat suitability are:</p>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>Type</th><th>Trait</th><th>Description</th></tr>
+</thead>
+<tbody>
+<tr><td>int</td><td>rootingDepth</td><td>Maximum length of the roots in cm</td></tr>
+<tr><td>dict(string, bool)</td><td>acceptedSoils</td><td>List of soils on which this plant can grow. Describes nutrient and water requirements of the plant (simplified)</td></tr>
+<tr><td>int</td><td>size</td><td>Relative plant size, describing how much soil space the plant occupies  (there is only a maximum number of “seats” available in each soil)</td></tr>
+</tbody>
+</table>
+</div>
+<p>While seeds may be deposited on any soil, and also germinate, they only are recruited (converted into Individuals) if the soil is at least as half as deep as the initial root size, and one of the acceptedSoils of the plant.
+As the plant ages, its roots will grow, proportionally to the increase in above-ground biomass and size (see growth submodel).</p>
+<p>Growth may cause the roots to become larger than the soil depth. If the roots exceed twice the soil depth, the habitat becomes unsuitable. While this does not kill an already established plant, resource acquisition is inhibited, causing the plant to die after a while (depending on available resource pools).</p>
+<p>If a soil does not contain enough water, the growth is slowed to 20%. Currently, water is sufficient for all plants if precipitation &gt; 0, so there is no attribute defining species-specific water needs [subject to change in the future]</p>
+<h3 id="list-of-supported-soil-types"><a class="header" href="#list-of-supported-soil-types">List of supported soil types</a></h3>
+<p>The soil and nutrient balance are on purpose left as simple and general as possible. We identify 12(13) distinct classes of soil that differ in water capacity, resistance to penetration by roots, pH, and nutrient dynamics. Our naming follows the USDA texture triangle, but is meant to be understood as a functional and not neccessarily physical attribute. According to the texture triangle, soil textures are understood as mixture of sand (coarse grains), clay (fine) and silt (intermediate). Pure Sand, Clay and Silt accordingly form three extreme edge cases, while equal mixture of all particle sizes is called Loam.<br>The 12 classes have the following ecological properties:</p>
+<ul>
+<li>Sand: Coarse-grained soil with very low water and nutrient capacity but good aeration, little organic matter and little structural support. Examples: Sand dunes (embryo dunes, yellow dunes, Sossusvlei) and construction sites</li>
+<li>Clay: Very heavy soil with high water and nutrient capacity, but no aeration and strong penetration resistance. Relatively rare. Examples: lake sediments or quiet zones of river deltas (locally), heavily disturbed sites with exposed subsoil; contaminated brownfields (functionally equivalent)</li>
+<li>Silt: Fine but non-cohesive soil with high water retention and nutrient accessibility, but prone to erosion. Rare in pure form. Examples: exposed subsoils and river bank sediments in loess regions (e.g. Danube loess belt).</li>
+<li>Loamy Sand: Sand-dominated soil with some fine particles; higher nutrient and water-holding capacity than pure sand. Examples: heathlands, dry pine forests.</li>
+<li>Sandy Loam: Loam-dominated soil with a higher sand content; good aeration and drainage but lower nutrient retention than loam. Examples: sandy riverbanks, vineyard soils in warm climates, intensive green roofs.</li>
+<li>Loam: Balanced soil with a mix of sand, silt, and clay, providing good aeration, drainage, and water and nutrient retention. Easy for roots to penetrate. Examples: gardens and parks, productive farmland.</li>
+<li>Silt Loam: Silt-dominated, fine-textured soil with good drainage and high water and nutrient retention, but vulnerable to erosion and compaction. Examples: fertile agricultural plains, loess, river deltas.</li>
+<li>Clay Loam: Clay-rich soil with high water and nutrient retention, but prone to compaction and difficult root penetration. Poor drainage and stagnant water may limit plant growth. Examples: heavily irrigated farmland, muddy pastures.</li>
+<li>Sandy Clay Loam: Substantial clay content but enough sand to improve aeration and drainage compared to clay loam. High nutrient retention but moderate penetration resistance. Examples: Old agricultural soils on sandy substrates, mixed alluvial deposits; some urban soils</li>
+<li>Silty Clay Loam: Fine-textured soil with high water and nutrient retention but reduced drainage, intermediate between loam and clay loam. Examples: floodplains, fertile valley soils, brownfields and other compacted vacant lots.</li>
+<li>Sandy Clay: Clay-dominated soil with noticeable sand fraction; very high nutrient and water capacity, but still poosr drainage and accessibility. Examples: disturbed industry/construction sites</li>
+<li>Silty Clay: Very fine-textured, cohesive and with extremely high water/nutrient retention. Minimal aeration, high penetration resistance. Often seasonally waterlogged. Examples: backswamps, lake margins</li>
+<li>The class NoSoil describes the absence of any substrate that supports growth.</li>
+</ul>
+<h2 id="disturbance"><a class="header" href="#disturbance">Disturbance</a></h2>
+<p>The disturbance model allows to provide a list of disturbances. The disturbances can destroy biomass, deplete the resource pool, or remove seeds.
+Disturbance is not yet implemented.</p>
+<h2 id="shape"><a class="header" href="#shape">Shape</a></h2>
+<h3 id="logic-and-purpose"><a class="header" href="#logic-and-purpose">logic and purpose</a></h3>
+<p>The plant’s shape describes the location of biomass, which collects light energy but also casts shade.
+The plant’s shape generally consists of a stem which contains no green leaf biomass, and a crown representing the leaves. The crown may be one of various 3-D shapes. Currently all crown shapes have a circular base  (cylindric, conical, spherical….) to ease voxel spillage calculations.<br>The stem may cover between 0 and 100% of the plants height. Small grasses and herbs are best approached with a stem of 0% and cylindrical shape, small shrubs by a stem close to 0 and spherical shape, and evergreen/deciduous trees with stems of ~ 50% and conical/spherical shapes respectively.</p>
+<p>The plant’s total leaf volume determines its resource balance, hence it is important that the volume (rather than height or diameter) is controlled accurately.<br>The shape model serves two functions: first, it calculates height/diameter based on the (changing) volume to allow drawing the plant; secondly, it serves as input for the light submodel (see below for details) - the light model traverses through the site in z-dimension and redistributes plant volumes along the x/y axis in chunks of 5 cm height. It thus requires knowledge of the amount of plant volume within a certain height cross section.  The outputs are thus: height, diameter and volume between (h0, h1) as function of current total volume.</p>
+<h3 id="general-formulas"><a class="header" href="#general-formulas">General formulas</a></h3>
+<ul>
+<li>
+<p>The maximum volume that the plant can obtain is shape-specific but depends on diameter and height:<br><code>Vmax = v(maxDiameter, crownHeight) </code>; where <code>crownHeight= maxHeight * (1-stemRatio)</code>. maxHeight is the maximum plant height, stemratio the proportion of stem; maxDiameter is the maximum width of the tree crown (or simply diameter of the plant for herbs and grasses).</p>
+</li>
+<li>
+<p>The plant’s current volume is <code>V[i] = size[i] * Vmax</code>, i.e., proportional to the growth determined by the Gompertz function (size[i] € [0,1]).</p>
+</li>
+<li>
+<p>Height is <code>h[i] = cbroot(size[i]) * maxHeight</code></p>
+</li>
+<li>
+<p>width(diameter) at height h is: <code>w[i,h] = cbroot(size[i]) * maxDiameter * d(h')</code>; where d(h’) is a shape-specific function describing diameter at height (h’). h’ is height expressed in unit terms <code>h'  = h/h[i]</code></p>
+</li>
+<li>
+<p>The amount of the plant’s volume that falls into a height cross section [h0,h1] is <code>Vsection = V[i] * s(h1',h0')</code>; where h0’ and h1’ are scaled by the cubic root and mapped to unit terms (stem sections excluded); s(h1’,h0’) is shape-specific.</p>
+</li>
+<li>
+<h3 id="shape-functions"><a class="header" href="#shape-functions">Shape functions</a></h3>
+</li>
+</ul>
+<p>The shape-specific functions assume unit sizes of h =1 and r = 0.5 (except for volume calculations which use the actual diameter and heights). For cylinders these are:</p>
+<ul>
+<li><code>v(diameter, height) = pi * (diameter/2)^2 * height</code></li>
+<li><code>d(h) = 1</code>, i.e., the diameter of the plant is constant across its height;</li>
+<li><code>s(h1, h0) = (h1 - h0) / 1</code>, i.e., the volume in a height section is proportional to the section’s height.</li>
+</ul>
+<p>The functions for cones (apex on top) are:</p>
+<ul>
+<li><code>v(diameter, height) = (1/3) * pi * (diameter/2)^2 * height</code></li>
+<li><code>d(h) = 1 - h</code>, i.e., the diameter declines linearly with height</li>
+<li><code>s(h1, h0) = V_frustum/V_total = (v(d(h1),h1)- v(d(h2),h2)) / v(1,1)</code>, i.e. the frustum’s volume is calculated based on the diameters at h1, h0</li>
+</ul>
+<p>The unit spheroid (sphere, but potentially stretched/contracted along height axis) is offset by 0.5 units in height to have the base at h=0. Its functions are:</p>
+<ul>
+<li><code>v(diameter, height) = (4/3) * pi * (diameter/2)^2 * (height/2)</code></li>
+<li><code>d(h) = sqrt(0.5^2 - (h-0.5)^2)</code>, i.e. following the formula of a circle;</li>
+<li><code>s(h1, h0) = (V_frustumlike / V_total) = cap(h1) - cap(h0)/v(1,1)</code>; where cap(h) is the volume of a spherical cap, <code>pi * h^2 * (3.0 * 1/2 - h)) / 3.0 </code></li>
+</ul>
+<h3 id="volume-to-surface-area-conversion"><a class="header" href="#volume-to-surface-area-conversion">Volume to surface area conversion</a></h3>
+<p>Plants are represented as a stack of plant surfaces, which are distributed along the height axis of the plant’s volume. One layer of plant material has a thickness of stratheight = 5 cm. The shape submodel accordingly converts leaf volumes Vmax and Vsection into surface area by dividing them by 5.0. stratheight is currently fixed but may be changed in the future.<br>The leaf area is both used to convert light (resource allocation model), and to cast shade (voxel model). Sometimes a plant may cause less shading than its surface area suggests (e.g. reflections, orientation of leaves), hence there is a possibility to reduce the shade cast per area by an opacity factor.<br>Plants that currently do not have the ideal biomass (see resource model) cover the same volume but are less dense than under ideal growth. Density lower than 1.0 reduces the amount of shade proportionally.</p>
+<h3 id="summary"><a class="header" href="#summary">Summary</a></h3>
+<p>The volume changes over time with inputs from the growth model, and approaches Vmax. Vmax is derived from species traits MaxDiameter and MaxHeight. Plant height and width increase monotonically following a cubic root relationship with volume. Height is additionally corrected for the species trait StemRatio. The explicit shapes allow querying current diameter and volume at height h; the volume is then converted into leaf surface area, and distributed across voxels by the light model.<br>The biomass is modelled indepently of the growth model, and a plant may fall behind in biomass growth. If so, it has the same volume but a lower density than a fully grown plant, and accordingly holds less surface area and casts less shade.</p>
+<p>In summary, the shape submodel holds the state variables size (proportional to volume) and density. It uses the following species traits:</p>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>Type</th><th>Trait</th><th>Description</th></tr>
+</thead>
+<tbody>
+<tr><td>float (0-1)</td><td>stemRatio</td><td>ratio of stem to crown</td></tr>
+<tr><td>float (0-1)</td><td>opacity</td><td>ratio of shade cast: leaf surface area</td></tr>
+<tr><td>float</td><td>maxHeight</td><td>maximum height of the plant including stem</td></tr>
+<tr><td>float</td><td>maxDiameter</td><td>maximum diameter of the plant crown</td></tr>
+<tr><td>string</td><td>shape</td><td>shape of the plant crown; currently supported are “Cylinder”, “Cone” and “Sphere”</td></tr>
+<tr><td></td><td>maxVolume</td><td>maximum volume of the plant crown. Derived from shape, maxDiameter and maxHeight</td></tr>
+</tbody>
+</table>
+</div>
+<h2 id="resource-use"><a class="header" href="#resource-use">Resource use</a></h2>
+<p>The resource submodel takes care of collecting light, converting it into resources, and spending resources on growth and reproduction.
+The resource allocation traits that determine Resource use are:</p>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>Type</th><th>Trait</th><th>Description</th></tr>
+</thead>
+<tbody>
+<tr><td>vector&lt;float&gt;</td><td>conversionEfficiency</td><td>Conversion efficiency of light to carbohydrates for each age, in g/KJ annual light energy. Typical values are in the order of 0.005 (https://en.wikipedia.org/wiki/Photosynthetic_efficiency )<sup>1</sup></td></tr>
+<tr><td>float</td><td>maintenance Costs</td><td>Energy costs in g carbohydrates per g biomass that the plant has to pay annually to maintain itself. Includes respiration, leaf replacement and other costs.</td></tr>
+<tr><td>float</td><td>biomassAllocation<sup>2</sup></td><td>percentage of resources that is allocated into green leaf growth anually, after accounting for maintenance costs. Unit: [g biomass / g Carbohydrates]</td></tr>
+<tr><td>float</td><td>seedAllocation<sup>2</sup></td><td>percentage of resources that is allocated into seed production anually, after accounting for maintenance costs. Any allocation that is “wasted” on other means not being modelled (e.g. investment into woody structure) can also be dumped here.  Unit: [g seeds / g Carbohydrates]</td></tr>
+<tr><td>float</td><td>maxBiomass</td><td>Maximum biomass in g that can be reached</td></tr>
+</tbody>
+</table>
+</div>
+<p><sup>1</sup> Providing a single biologically correct conversionEfficiency value is difficult, as the plant progressively shades itself as it ages. Both the lighting model and the resource allocation model are not realistic enough yet. The parametrization procedure allows calculating a reasonable list of conversion efficiencies that match the model’s logic. See parametrization section for details. [<strong>subject to change</strong>]<br><sup>2</sup> Ensure biomassAllocation and seedAllocation sum to 1.0;</p>
+<p>Under ideal conditions, the plant follows the growth curve given by the growth model, i.e. a Gompertz function that is dependent on current age, life span and maturity age, and levels off at maxBiomass. If less resources are available, the growth is limited accordingly. This submodel computes the amount of available resources and invests them in biomass and seeds:</p>
+<ol>
+<li>The plant converts light into a resource. One light unit (in KJ) is converted into conversionEfficency[i] resource units (e.g. carbohydrates in g), where i denotes age;</li>
+<li>Resources are reduced by maintenanceCosts * idealBiomass, where idealBiomass follows the age-dependent Gompertz function.</li>
+<li>The plant allocates seedAllocation * resources to reproduction, provided it is mature (age-dependent); and up to biomassAllocation * resources to biomass. The value is capped at idealBiomass however. The resource pool is reduced by potential seed and biomass investment;</li>
+<li>If the plant runs out of resources, it dies.</li>
+</ol>
+<p>Notes:</p>
+<ul>
+<li>While seed production is only resource-limited, biomass growth is capped by the Gompertz function - even if abundant resources are available. This avoids unrealistically high growth rates.</li>
+<li>juvenile plants and Gompertz-capped plants do not save the unspent resources, to avoid building up unreasonable reserves.</li>
+<li>maintenance costs are based on ideal biomass, and <em>not</em> reduced when the plant is being shaded. This mechanism causes plants to die rather than just growing slower when deprived for sustained time.</li>
+</ul>
+<h2 id="seed-pool"><a class="header" href="#seed-pool">Seed Pool</a></h2>
+<p>The seed pool submodel simulates the life of seeds before they are recruited and converted into individuals.
+The seed biology definings seeds are:</p>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>Type</th><th>Trait</th><th>Description</th></tr>
+</thead>
+<tbody>
+<tr><td>bool</td><td>Dormancy</td><td>describes whether species forms a seed bank (true/false); seed banks ensure plants persist through unfavourable conditions</td></tr>
+<tr><td>float</td><td>MortalityDormant</td><td>mortality of dormant seeds, percentage</td></tr>
+<tr><td>float</td><td>DormancyBreakRate</td><td>rate of breaking dormancy and pushing seeds back into active state (high rate = short-lived seed bank)</td></tr>
+<tr><td>float</td><td>GerminationSuccess</td><td>probability of germination as percentage (active seeds only)</td></tr>
+</tbody>
+</table>
+</div>
+<p>The seed pool contains up to c seeds of a species; the voxel and its soil determine the capacity c.<br>Seeds may be dormant or active; if dormant, they have a mortality of mortalityDormant in each growth cycle, if active they suffer germinatSuccess mortality upon attempting to turn into an Individual. Active seeds cannot turn into dormant seeds, but dormant seeds are converted at a rate of dormancyBreakRate into active seeds in each growth cycle.<br>Seeds may be disturbed (affecting only active or in equal proportions active and dormant seeds), and new seeds (active or dormant) may be added to the seed pool.</p>
+<h2 id="dispersal"><a class="header" href="#dispersal">Dispersal</a></h2>
+<p>random uniform redistribution of any newly produced seeds + input from region.
+[<strong>subject to change</strong>]</p>
+<h2 id="light-model"><a class="header" href="#light-model">Light model</a></h2>
+<p>The light submodel is responsible for calculating the amount of light that each plant individual shall receive. The first step is the allocation of plant material in the correct Voxels; the second step is the calculation of light interception by this plant material.</p>
+<h3 id="plant-spillage"><a class="header" href="#plant-spillage">Plant spillage</a></h3>
+<p>Plant individuals have a “home” voxel with a soil in which they root, but are otherwise relatively independent of the voxel grid. In particular, they may be larger than a Voxel.<br>For the purpose of light calculation, voxels are split into flat cuboids (5 cm high but 1 voxel wide, see section “spatial and temporal resolution”) that can hold a single, 2-dimensional, layer of plant material. The Shape submodel is accessed to query the amount of plant material at each height and the material is distributed in the x-y plane, according to the diameter of the plant (starting with 8 adjacent neighbours; it is implicitly assumed that xdim refers to a diameter, i.e. the plant has a circular base). If less than the required neighbours are available, plant spillage is NOT adjusted. For example, with only 4 neighbours, each neighbour still receives only one eigth of the plant material; the remaining material is thrown into void space. This prevents plants from getting strange shapes e.g. in narrow alleys.</p>
+<p>Because plants grow independently of the Voxel and light models, and because material spills across voxel boundaries, there may be more plant area than a voxel may support. In this case, a random selection of plant material is chosen to lie “on top” and receive light. The number of draws is a parameter (lightDistributionFactor) - more draws lead to fairer resource allocation (small intertwined leaves), while less draws indicate winner-takes-all strategies (e.g. one big leaf overshadowing all other material). For simplicity, lightDistributionFactor is a global attribute, not species-specific.</p>
+<h3 id="raycasting"><a class="header" href="#raycasting">Raycasting</a></h3>
+<p>[<strong>subject to change!</strong>]<br>The simulation of a plant community benefits from a realistic calculation of light levels. Ideally, one would write a raycasting model, but this is obviously computationally challenging and complex, so some simplification is required.<br>In this model (version), light beams are sent at a 90° angle through the Environment, getting reduced in proportion to the surface area that is blocked by plant material. Because this calculation diminishes available light very quickly, a certain proportion of the available light is “diffuse light” and cannot be reduced by biomass, hence allowing some light to arrive on the ground even after passing through multiple layers of plant material.<br>To model shading by buildings etc., each voxel has its own irradiance value, which is provided as input constant and cannot be changed throughout the model run. The light energy arriving in a voxel is <code>E * irradiance * (1-shading)</code>, where E is a fixed input parameter (typically 1000 KW/m²/year). The resulting light energy is available to all plants growing in the voxel layer, proportionate to the surface area they cover.
+If input irradiance is calculated with a realistic shading model, the simulation results are affected by the 3D shape of buildings and other structures. The angle at which “biomass above” is calculated is currently 90° and contrasts with those irradiance calculations, but the angle may be changed in the future (intermediate solution between raycasting and 2d shading).</p>
+<h1 id="8-parametrization"><a class="header" href="#8-parametrization">8 Parametrization</a></h1>
+<h2 id="recap-of-resource-economy-and-growth-logic-of-the-model"><a class="header" href="#recap-of-resource-economy-and-growth-logic-of-the-model">Recap of resource economy and growth logic of the model</a></h2>
+<p>Plants can only germinate if soil conditions are suitable. After germinating, the plant grows above ground in height, and below ground in root length. At some age it matures and is able to produce seeds, and it dies once lifespan is exceeded.<br>Each plant individual has a carbohydrate resource pool, and green leaf biomass. It uses its leaves to collect sun energy and convert it into resources. The resources are used to survive, and to reinvest into more leaves and seeds.<br>The seeds that are produced by the plant are dispersed across the site, and may germinate if landing on suitable soil, thus starting a new plant individual.<br>Because plant biomass casts shade and because plants vary in growth through space and time, shading conditions change dynamically. Variable soil conditions, variation among plants in resource efficiency/shade tolerance, and stochasticity in seed dispersal cause a dynamic plant community to emerge.<br>Further effects.</p>
+<ul>
+<li>Resource acquisition (and hence growth) is stopped if there is no more space left for the roots.</li>
+<li>Seeds may also be dormant for a longer time (seed bank), but this feature is disabled by default and not yet part of the parametrization.</li>
+<li>Disturbance (management) is not implemented yet.</li>
+</ul>
+<h2 id="parametrization-challenges"><a class="header" href="#parametrization-challenges">Parametrization challenges</a></h2>
+<p>As stated in the model description, plant growth and resource economics are largely determined by fixed input parameters - there are no adaptive behaviours (phenotypic plasticity) that help a struggling plant, and a negative energy balance can quickly cascade into a positive feedback loop that kills it. Because the efficiency inevitably decreases with age (self-shading), no set of input parameters could maintain a consistent positive energy balance.<br>Great care was taken to ensure that all parameters are as realistic as possible; however, to offset the decline in efficiency, the parameter CONVERSION EFFICIENCY is adjusted so that the model produces sensible results, even if not grounded in theory. Future changes to the light model, but also implementation of plasticty should reduce the need for such a scaling vector, and in anticipation of the changes a realistic (but currently unused) derivation of conversion efficiency is already provided.</p>
+<h2 id="traits-required-by-the-model"><a class="header" href="#traits-required-by-the-model">Traits required by the model</a></h2>
+<p>Here is, for completeness’ sake, the full list of parameters that is required by the model. Many of the traits are estimated from simpler traits as described in the next sections.</p>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>Type</th><th>Trait</th><th>Description</th></tr>
+</thead>
+<tbody>
+<tr><td>float</td><td>MatAge</td><td>Age (in years) at which the plant reaches maturity and can start reproducing. Also used to estimate when plant growth decelerates</td></tr>
+<tr><td>int</td><td>LifeSpan</td><td>Maximum age (in years) that a plant can reach, if not dying of other causes</td></tr>
+<tr><td>int</td><td>rootingDepth</td><td>Maximum length of the roots in cm</td></tr>
+<tr><td>dict(string, bool)</td><td>acceptedSoils</td><td>List of soils on which this plant can grow. Describes nutrient and water requirements of the plant (simplified)</td></tr>
+<tr><td>int</td><td>size</td><td>Relative plant size, describing how much soil space the plant occupies  (there is only a maximum number of “seats” available in each soil)</td></tr>
+<tr><td>float</td><td>HMax</td><td>Maximum height (in cm) a plant can reach, including stem if present.</td></tr>
+<tr><td>float</td><td>maxDiameter</td><td>maximum diameter (in cm) of the plant at its widest point.</td></tr>
+<tr><td>float</td><td>SLA</td><td>Leaf surface area per g dry weight(cm2/g). No longer in use.</td></tr>
+<tr><td>float</td><td>maxVolume</td><td>maximum volume of the plant crown. Derived from shape, maxDiameter and maxHeight</td></tr>
+<tr><td>float</td><td>opacity</td><td>amount of shade cast per cm² surface area (0.0-1.0). Most plants have opacity of 1.0.</td></tr>
+<tr><td>string</td><td>shape</td><td>describes the plant shape. Currently supporting “cylinder” (default), “Cone” and “Sphere”.</td></tr>
+<tr><td>float</td><td>stemRatio</td><td>ratio of crown height to total plant height</td></tr>
+<tr><td>vector&lt;float&gt;</td><td>conversionEfficiency</td><td>Conversion efficiency of light to carbohydrates for each age, in g/KJ annual light energy. Typical values are in the order of 0.005 (https://en.wikipedia.org/wiki/Photosynthetic_efficiency )</td></tr>
+<tr><td>float</td><td>maintenance Costs</td><td>Energy costs in g carbohydrates per g biomass that the plant has to pay annually to maintain itself. Includes respiration, leaf replacement and other costs.</td></tr>
+<tr><td>float</td><td>biomassAllocation</td><td>percentage of resources that is allocated into green leaf growth anually, after accounting for maintenance costs. Unit: [g biomass / g Carbohydrates]</td></tr>
+<tr><td>float</td><td>seedAllocation</td><td>percentage of resources that is allocated into seed production anually, after accounting for maintenance costs. Any allocation that is “wasted” on other means not being modelled (e.g. investment into woody structure) can also be dumped here.  Unit: [g seeds / g Carbohydrates]</td></tr>
+<tr><td>float</td><td>maxBiomass</td><td>Maximum biomass in g that can be reached</td></tr>
+<tr><td>bool</td><td>Dormancy</td><td>describes whether species forms a seed bank (true/false); seed banks ensure plants persist through unfavourable conditions</td></tr>
+<tr><td>float</td><td>MortalityDormant</td><td>mortality of dormant seeds, percentage</td></tr>
+<tr><td>float</td><td>DormancyBreakRate</td><td>rate of breaking dormancy and pushing seeds back into active state (high rate = short-lived seed bank)</td></tr>
+<tr><td>float</td><td>GerminationSuccess</td><td>probability of germination as percentage (active seeds only)</td></tr>
+</tbody>
+</table>
+</div>
+<h2 id="estimation-of-simple-parameters"><a class="header" href="#estimation-of-simple-parameters">Estimation of simple parameters</a></h2>
+<p>The model traits can be estimated from a (simplified) set of input parameters, which should be readily available from a variety of sources (e.g. Wikipedia):</p>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>Trait</th><th>Estimate</th></tr>
+</thead>
+<tbody>
+<tr><td>HMax</td><td>from pictures, wikipedia entries</td></tr>
+<tr><td>LifeSpan</td><td>rough estimate is usually sufficient</td></tr>
+<tr><td>MaxDiameter</td><td>width of plant or tree crown, estimate from pictures / wikipedia</td></tr>
+<tr><td>acceptedSoils</td><td>can be estimated from general plant description, e.g. “prefers moist soil”–&gt; Loams and Clay-rich soils, no sand</td></tr>
+<tr><td>growth form</td><td>may be grass,herb, shrub, deciduous tree or evergreen tree. The distinction between shrub and tree is not always easy, provide the typical growth form that is expected on the site.</td></tr>
+<tr><td>shade tolerance</td><td>Low (full-sun), medium or high (shade-tolerant).</td></tr>
+<tr><td>shape</td><td>required if different from cylinder (e.g. trees)</td></tr>
+</tbody>
+</table>
+</div>
+<p>For trees and shrubs, the additional parameters are needed:</p>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>Trait</th><th>Estimate</th></tr>
+</thead>
+<tbody>
+<tr><td>DBH</td><td>Diameter of the stem, at breast height, estimate from pictures /wikipedia</td></tr>
+<tr><td>stemRatio</td><td>Onset of crown. Base the estimate on general growth patterns. 0.0 if leaf biomass starts at ground level.</td></tr>
+</tbody>
+</table>
+</div>
+<p>Several of the input parameters can be directly used by the model. These simple rules of thumb and simple math estimate some of the remaining traits:</p>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>Trait</th><th>Estimate</th><th>Comments</th></tr>
+</thead>
+<tbody>
+<tr><td>MatAge</td><td><code>0.5 * lifespan * (1+ShadeTolerance)</code> for grasses and herbs; <code> 0.1 * lifespan * (1+ShadeTolerance)</code> for shrubs and trees</td><td><em>ShadeTolerance correction moves the inflection point of the Gompertz function for slower-growing but more shade-tolerant plants</em></td></tr>
+<tr><td>Rooting depth</td><td>10cm for grasses, 30 for herbs, 50 for shrubs, 100 for trees</td><td><em>there are also shallow-rooted trees and deep-rooted grasses, but this estimate shall serve as reasonable entry point</em></td></tr>
+<tr><td>Size</td><td>10 for grasses and herbs, 30 for shrubs, 60 for trees</td><td></td></tr>
+<tr><td>Dormancy</td><td>false</td><td>leave false if no other information is available (no seed bank)</td></tr>
+<tr><td>MortalityDormant</td><td>0.0 if not Dormancy</td><td></td></tr>
+<tr><td>DormancyBreakRate</td><td>1.0 if not Dormancy</td><td></td></tr>
+<tr><td>GerminationSuccess</td><td>1.0 for grasses, 0.6 for herbs, 0.005 for shrubs, 0.0025 for trees.</td><td><em>Low germination rates ensure that trees and shrubs are relatively sparse on site.</em></td></tr>
+<tr><td>Opacity</td><td>1.0</td><td>leave at 1.0 if no other information is avialable</td></tr>
+<tr><td>Maintenance costs</td><td>0.2 - shade tolerance</td><td></td></tr>
+</tbody>
+</table>
+</div>
+<h2 id="estimation-of-maxbiomass"><a class="header" href="#estimation-of-maxbiomass">Estimation of MaxBiomass</a></h2>
+<p>Max biomass (dry weight of green leaves) of the plant can be estimated from allometric equations. Usually allometric equations are created for specific subsets of plants; to generalize and keep it simple, we use the following very coarse approximations:</p>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>Growth form</th><th>allometric equation</th></tr>
+</thead>
+<tbody>
+<tr><td>grasses</td><td>bm = 0.0006890597 * (diameter)^1.669976 * (height/100)^0.5895024 * 1000</td></tr>
+<tr><td>deciduous trees</td><td>bm = 0.1 * (DBH)^2.5 *1000 *0.02</td></tr>
+<tr><td>evergreen trees</td><td>bm = 0.1 * (DBH)^2.5 *1000 *0.05</td></tr>
+<tr><td>shrubs</td><td>bm = 0.1 * (DBH)^2.5 *1000 *0.05</td></tr>
+<tr><td>herbs</td><td>bm = 0.1 * (diameter)^2.3 *1000</td></tr>
+</tbody>
+</table>
+</div>
+<p><em>tree/shrub equations estimate total biomass (including stems etc). The last factor corrects to leaf fraction.</em></p>
+<h2 id="estimation-of-allocation-strategy"><a class="header" href="#estimation-of-allocation-strategy">Estimation of Allocation strategy</a></h2>
+<p>The plant may invest its resources into 1) biomass,2) seeds,3) reserve tissues (e.g. roots), or 4) structural biomass and other material that is not being modelled.<br>However:</p>
+<ul>
+<li>The model does not explicitly account for “wasted” resources yet. Currently, the waste is lumped into seed production, because seeds are always overly abundant and excess production of seeds is effectively a waste of resources.</li>
+<li>the trade-off between reserves and investment is not yet explicitly implemented; reserves are added on-top of biomass/seeds, via higher efficiency of shade-tolerant plants.</li>
+</ul>
+<p>Thus, there are only two forms of investment (biomass and seeds), and the following ruls are established:</p>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>Growth form</th><th>biomass</th><th>seeds</th><th>notes</th></tr>
+</thead>
+<tbody>
+<tr><td>Grasses</td><td>0.75</td><td>0.25</td><td>-</td></tr>
+<tr><td>Deciduous trees</td><td>0.50</td><td>0.50</td><td>10% invested in seeds, 40% “wasted” on wood structure</td></tr>
+<tr><td>Evergreen trees</td><td>0.40</td><td>0.60</td><td>10% seeds, 50%  wood and needles</td></tr>
+<tr><td>Shrubs</td><td>0.60</td><td>0.40</td><td>20% seeds, 20%  wood structure</td></tr>
+<tr><td>Herbs</td><td>0.70</td><td>0.30</td><td>-</td></tr>
+</tbody>
+</table>
+</div>
+<p>Investment into reserves is dependent on the plant’s shade tolerance. More shade-tolerant plants tend to grow slower/stay smaller, but save more of their resources. Low-tolerance plants get a reserve boost of 5%, medium 10% and high tolerance plants 15%.</p>
+<h2 id="theoretical-derivation-of-conversion-efficiency"><a class="header" href="#theoretical-derivation-of-conversion-efficiency">Theoretical derivation of conversion efficiency</a></h2>
+<p><strong>For reference only - the actual conversion efficiency used in the model is described below.</strong></p>
+<p>ConversionEfficiency describes how many g sucrose can be created from 1 KJ light.This data was not readily available, but can be approximated based on some chemistry/biology: Pure sucrose contains 5647 KJ/mol (combustion energy), at a mass of 342,3g/mol. Hence, a maximum of 0.06062 g could be produced with 1 KJ solar energy. For comparison: an annual light input of 1030.1 KWh/m2 =3,6*10^6KJ (Global Solar atlas, Kopenhagen) makes a maximum of 224 Kg Sucrose/y. Sugar beet production is approx 60T/ha with up to 20% sucrose = 12T/ha = 1.2 kg/m2, which makes an efficiency of 0.5%. This is a realistic estimate of photosynthetic efficiency (https://en.wikipedia.org/wiki/Photosynthetic_efficiency). Hence, a conversion efficient of <code>c = 0.06062 * x</code>, where x is a plant-specific constant, seems reasonable. For example, x = 0.3 would make 0.00018186 g/KJ.</p>
+<p>Whether the conversionEfficiency is suitable for the plant and leads to a positive energy balance depends on SLA and MC; whether it is also sufficient for maintaining the expected biomass growth curve depends further on shape of the plant (height, diameter), growth rate and degree of self-shading. Quite often, it may not provide reasonable results.</p>
+<h2 id="actual-derivation-of-conversion-efficiency"><a class="header" href="#actual-derivation-of-conversion-efficiency">Actual derivation of conversion efficiency</a></h2>
+<p>This variable is the trickiest part. To understand the required conversion efficiency at each age step, we need to figure out how the plant grows and successively shades itself.<br>For better readibility, all species traits are written in UPPERCASE.
+A cylindric shape is assumed for simplicity.</p>
+<p>We mostly need:</p>
+<ul>
+<li>MAXDIAMETER[cm]</li>
+<li>HMAX[cm]</li>
+<li>STEMRATIO[0-1]</li>
+<li>MAXVOLUME: <code>maxVolume = pi * (MAXDIAMETER/2)^2 * HMAX * (1-STEMRATIO)</code> [cm3]</li>
+</ul>
+<p>First, we can calculate the growth of the plant in age € [0, LIFESPAN]:</p>
+<ul>
+<li><code>size(age) = 1 * exp(-exp(-KG * (age - MATTIME)))</code>; with <code>KG = 1.998/(LIFESPAN - MATTIME)</code> [unit: percentage];</li>
+</ul>
+<p>The following state variables result from the growth function (change with age i):</p>
+<ul>
+<li>max attainable biomass under infinite light: <code>b_theo[i] = size[i] * MAXBIOMASS</code> [unit: g_leaves]</li>
+<li>(root growth: <code>RG[i] = size[i] * ROOTINGDEPTH</code> [unit: cm]; not required for the caculation)</li>
+<li>crown volume: <code>V[i] = size[i] * MAXVOLUME</code>[unit : cm3]</li>
+<li>height: <code>h[i] = cbroot(size[i]) * MAXHEIGHT</code>  [unit: cm]</li>
+<li>diameter: <code>d[i] = cbroot(size[i]) * MAXDIAMETER * 1</code> [unit: cm]; (cylinder shape)</li>
+</ul>
+<p>The plant can in principle use the leaf volume to capture energy and produce new leaf biomass.</p>
+<ul>
+<li><code>biomass gain = (income - maintenance) * allocation</code></li>
+<li><code>             = (available_energy[KJ] * CONVERSIONEFFICIENCY[g sucrose/KJ] - b_theo[i+1][g leaf] * MAINTENANCE COST[g suc/g leaf]) * BIOMASS ALLOCATION[g leaf/g sucrose]</code>; with:</li>
+<li><code>available_energy[KJ] = effective_surface_area[cm2] * light input[KJ/cm2] </code></li>
+</ul>
+<p>We need to figure out the effective surface area, i.e. the area receiving light.</p>
+<ul>
+<li>In the current light model, a light beam of 3.6*10^6^ KJ/m2 hits each x/y pair and then travels down the z-column. Thus, each m2 of the site has its own energy model.</li>
+<li>The plant covers <code>area[i] = pi * (d[i]/2)^2</code>cm².</li>
+<li>It can gather energy from <code>n_columns[i] =ceiling(area[i]/VOXELAREA); min 1</code>; with VOXELAREA = 10000 cm2</li>
+</ul>
+<p>The following calculations are made independently for each column:</p>
+<ul>
+<li>Each layer shades the layers below. Light passes at 90° from above and there is no diffusion of light. The uppermost layer is thus most efficient, and efficiency attenuates quickly as light passes downwards.</li>
+<li>The plant covers <code>areaPercent[i] = area[i]/(n_columns[i] * VOXELAREA)</code> % of the area.</li>
+<li>light arriving on ground = <code>light = (1-areaPercent)^number_layers * (1-area_percent * fracLayer)</code>; with <code>number_layers = h[i] %/% 5cm</code> and <code>fracLayer = (h[i] - number_layers * 5cm)/5cm</code>. The second term corrects for the uppermost layer, which is usually not filled along its whole z-axis.</li>
+</ul>
+<p>Finally:</p>
+<ul>
+<li><code>effective_surface_area = (1-light) * VOXELAREA * n_columns[i]</code></li>
+</ul>
+<p>The effective surface area is smaller than the total leaf area.</p>
+<p>Using this logic, we can calculate the conversion efficiency that is required to let the plant grow according to its growth curve, plus a buffer (depending on shade tolerance). We assume an annual light of 3.6*10^6 KJ/m2 = 360 KJ/cm2:
+<code>req_gain = b_theo[i+1] - b_theo[i]</code>  [b_theo was calculated in the beginning]<br><code>possible_gain / req_gain = 1 + ST</code><br><code>==&gt; (available_energy * CE - b_theo[i+1] * MC) * BMALLOC / req_gain = (1+ST)</code><br><code>==&gt; CE = ((1+ST) * req_gain / BMALLOC + b_theo[i+1] * MC)/available_energy</code>,<br>with <code>available_energy = (effective_surface_area * 360)</code><br>and <code> effectiveArea ~ f(size)</code><br>The result is a vector (1 value per age step). The shape of conversion efficiency ~ age relationship is quite complex and species-specific.</p>
+<p>The conversion efficiency used in this approach is, of course, only a coarse adjustment until the model is improved and a more realistic effficiency can be implemented. Drawbacks of the current approach:</p>
+<ul>
+<li>conversion efficiency is age-dependent</li>
+<li>convesrion efficiency does not saturate/decline with light intensity (infinite light-&gt;infinite energy)</li>
+<li>The calculation is based on BiomassAlloc; investing heavily in seeds, structure or reserves is not penalized</li>
+<li></li>
+</ul>
+<h2 id="example-parametrization"><a class="header" href="#example-parametrization">Example parametrization</a></h2>
+<p>As one example, we here define the parameters for Holcus lanatus.</p>
+<h3 id="inputs"><a class="header" href="#inputs">Inputs</a></h3>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>trait</th><th>value</th></tr>
+</thead>
+<tbody>
+<tr><td>HMax</td><td>66.2</td></tr>
+<tr><td>lifespan</td><td>5</td></tr>
+<tr><td>maxDiameter</td><td>30</td></tr>
+<tr><td>acceptedSoils</td><td>Loam, LoamySand, Sandyloam, SiltLoam</td></tr>
+<tr><td>growth form</td><td>grass</td></tr>
+<tr><td>shade tolerance</td><td>low(0.03)</td></tr>
+<tr><td>shape</td><td>cylinder</td></tr>
+<tr><td>stemRatio</td><td>0.0</td></tr>
+</tbody>
+</table>
+</div>
+<h3 id="trait-estimation"><a class="header" href="#trait-estimation">Trait estimation</a></h3>
+<p>Here are all traits, based on estimation rules above, except conversion efficiency which is calculated below.</p>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>Trait</th><th>Value</th><th>Comments</th></tr>
+</thead>
+<tbody>
+<tr><td>MatAge</td><td>1.525</td><td>Manually adjusted</td></tr>
+<tr><td>LifeSpan</td><td>5</td><td></td></tr>
+<tr><td>HMax</td><td>66.2</td><td></td></tr>
+<tr><td>rootingDepth</td><td>10</td><td></td></tr>
+<tr><td>acceptedSoils</td><td>Loam, LoamySand, SandyLoam, SiltLoam</td><td></td></tr>
+<tr><td>size</td><td>10</td><td></td></tr>
+<tr><td>maxDiameter</td><td>30</td><td></td></tr>
+<tr><td>opacity</td><td>1.0</td><td></td></tr>
+<tr><td>shape</td><td>Cylinder</td><td></td></tr>
+<tr><td>stemRatio</td><td>0.0</td><td></td></tr>
+<tr><td>conversionEfficiency</td><td>see below</td><td></td></tr>
+<tr><td>maintenance Costs</td><td>0.17</td><td></td></tr>
+<tr><td>biomassAllocation</td><td>0.75</td><td></td></tr>
+<tr><td>seedAllocation</td><td>0.25</td><td></td></tr>
+<tr><td>maxBiomass</td><td>158.27388038098451133278826933346</td><td>see allometric eq. for grasses</td></tr>
+<tr><td>Dormancy</td><td>false</td><td></td></tr>
+<tr><td>MortalityDormant</td><td>0.0</td><td></td></tr>
+<tr><td>DormancyBreakRate</td><td>1.0</td><td></td></tr>
+<tr><td>GerminationSuccess</td><td>1.0</td><td></td></tr>
+</tbody>
+</table>
+</div>
+<h3 id="calculation-of-growth"><a class="header" href="#calculation-of-growth">Calculation of growth</a></h3>
+<p>This is the expected growth as function of age (gompertz function with lifespan, matTime):</p>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>age</th><th>percentage</th><th>root length</th><th>ideal_biomass</th><th>volume</th><th>diameter</th><th>height</th></tr>
+</thead>
+<tbody>
+<tr><td>0</td><td>0.0904240</td><td>0.904240</td><td>14.31176</td><td>4231.303</td><td>13.46529</td><td>29.71341</td></tr>
+<tr><td>0.1</td><td>0.1034192</td><td>1.034192</td><td>16.36855</td><td>4839.399</td><td>14.08170</td><td>31.07361</td></tr>
+<tr><td>1</td><td>0.2586275</td><td>2.586275</td><td>40.93397</td><td>12102.219</td><td>19.11376</td><td>42.17770</td></tr>
+<tr><td>2</td><td>0.4671940</td><td>4.671940</td><td>73.94461</td><td>21861.887</td><td>23.27843</td><td>51.36773</td></tr>
+<tr><td>3</td><td>0.6516551</td><td>6.516551</td><td>103.13999</td><td>30493.565</td><td>26.00921</td><td>57.39366</td></tr>
+<tr><td>4</td><td>0.7858563</td><td>7.858563</td><td>124.38053</td><td>36773.379</td><td>27.68443</td><td>61.09032</td></tr>
+<tr><td>5</td><td>0.8731864</td><td>8.731864</td><td>138.20260</td><td>40859.904</td><td>28.67413</td><td>63.27425</td></tr>
+</tbody>
+</table>
+</div>
+<h3 id="estimation-of-conversion-efficiency"><a class="header" href="#estimation-of-conversion-efficiency">Estimation of Conversion efficiency</a></h3>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>Age</th><th>effective_area</th><th>energy</th><th>required_CE</th></tr>
+</thead>
+<tbody>
+<tr><td>0</td><td>816.9785</td><td>294112.3</td><td>0.000019065  [not required]</td></tr>
+<tr><td>0.1</td><td>929.2385</td><td>334525.9</td><td>0.000121651</td></tr>
+<tr><td>1</td><td>2176.7167</td><td>783618.0</td><td>0.000073895</td></tr>
+<tr><td>2</td><td>3602.1819</td><td>1296785.5</td><td>0.000044440</td></tr>
+<tr><td>3</td><td>4654.3336</td><td>1675560.1</td><td>0.000030029</td></tr>
+<tr><td>4</td><td>5314.9525</td><td>1913382.9</td><td>0.000022200</td></tr>
+<tr><td>5</td><td>5701.2923</td><td>2052465.2</td><td>- [not required]</td></tr>
+</tbody>
+</table>
+</div>
+<h2 id="resources-and-biomass"><a class="header" href="#resources-and-biomass">Resources and biomass</a></h2>
+<p>Assuming resources are reset to 0 every timestep:</p>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>age</th><th>biomass</th><th>eff_area</th><th>energy</th><th>resources harvested</th><th>bm gained</th><th>seeds</th><th>surplus</th></tr>
+</thead>
+<tbody>
+<tr><td>0.1</td><td>16.36855</td><td>816.9785</td><td>294112.3</td><td>40.695283</td><td>25.30238</td><td>8</td><td>0.98261672</td></tr>
+<tr><td>1</td><td>40.93397</td><td>929.2385</td><td>334525.9</td><td>57.905193</td><td>34.00096</td><td>11</td><td>1.32042551</td></tr>
+<tr><td>2</td><td>73.94461</td><td>2176.7167</td><td>783618.0</td><td>57.628780</td><td>30.07124</td><td>10</td><td>1.16781503</td></tr>
+<tr><td>3</td><td>103.13999</td><td>3602.1819</td><td>1296785.5</td><td>50.315039</td><td>21.87776</td><td>7</td><td>0.84962181</td></tr>
+<tr><td>4</td><td>124.38053</td><td>4654.3336</td><td>1675560.1</td><td>42.476752</td><td>14.23673</td><td>4</td><td>0.55288280</td></tr>
+<tr><td>5</td><td>138.20260</td><td>5701.2923</td><td>1913382.9</td><td></td><td></td><td></td><td></td></tr>
+</tbody>
+</table>
+</div>
+<h1 id="developer-notes"><a class="header" href="#developer-notes">Developer notes</a></h1>
+<p>will be moved elsewhere soon.<br>The model consists of A graph with voxels, containing soils and communities of individuals. The individual is composed of submodels.</p>
+<h2 id="flyweight-pattern-for-species-traits"><a class="header" href="#flyweight-pattern-for-species-traits">Flyweight pattern for species traits</a></h2>
+<p>Because many individuals of the same species are created, the species (traits) are implemented as flyweights - the runtime-constant trait variables are stored once and pointed-to by each individual. Example: Growth model has current age as state variable, and lifehistory*   with lifespan. All individuals of the species share the same lifespan but may have different ages.</p>
+<h2 id="plant-geometry-and-growth-patterns"><a class="header" href="#plant-geometry-and-growth-patterns">plant geometry and growth patterns</a></h2>
+<p>The individuals are assigned to a “home” voxel, where they principally grow, but they can of course spill into adjacent voxels if big enough. They can grow in positive z-direction only, but in any x-y direction. The plant can be split into a crown and a stem (though the stem may have 0 height). To ease calculations, all plant crowns have a circular base (cylinders, spheres, cones). They are always centered at the midpoint of a voxel base (x=0.5, y = 0.5, z=0.0). The voxels that intersect with the plant are determined by radius, height and shape of the crown, and of course height of the stem. Stems are always 100% straight and crowns perfectly round.</p>
+<h2 id="logic-of--voxel-ordering"><a class="header" href="#logic-of--voxel-ordering">Logic of  voxel ordering</a></h2>
+<p>One could, in principle, store a vector&lt;Individuals&gt; in the environment. At each time step one would loop over all individuals, find voxels they grow into and assign their volume to the voxels (this assignment is needed for shading calculations). Because individuals constantly die and get recreated, individuals are unsorted, and the <strong>voxel lookup</strong> would have poor cache locality. Parallelization may also be tricky (race conditions).<br>Instead, the model can also traverse through the voxels, going from z_min upward. It collects the individuals and their volumes along the way, and for each layer: 1) calculates diameter of each individual at height z[i], and volume between z[i] and z[i+1], 2) distributes the volume equally across the voxels falling into diameter, 3) removes the individual if no volume is left. This would be more cache-efficient as all voxels are queried exactly once and in natural ordering. The individuals are also only added once to the list until eventual removal and the list should stay reasonably small.<br>There is one catch though: the plant model uses the same voxel resolution as GH for environmental variables, assigning home voxels, and soil -  but it requires finer resolution for light calculations. To accomodate the resolution differences, it traverses through the z-voxel layers and collects the individuals therein. Then, it goes through l layers (20 per z-layers, with 5cm layers in 1.0 m resolution), calculates diameters and volumes (of the 5cm sections) and spills plant volumes along the plant diameter; inside the l-loop, it may continue into layers which lie in higher z-voxels if the plant is larger than 1 voxel high; finally, when all individuals and voxels are done, it continues normally with the next z. Possibly the z-voxel resolution could be removed at some point, making the whole model run on finer resolution than GH (with some clever filtering for steps that do not require fine resolution).<br>Note that fine resolution is also required in an entity-first approach.</p>
+<h2 id="shape-classes"><a class="header" href="#shape-classes">shape classes</a></h2>
+<ul>
+<li>
+<p>Shape is an abstract base, ShapeCylinder, ShapeCone and ShapeSphere are derived classes. They calculate volume of a height section (frustum etc) diameter and height as percentages on a unit scale (0-1).</p>
+</li>
+<li>
+<p>ShapeTraits is - in analogy to LifeHist, Resourcealloc etc - a class storing species-specific traits such as maximal volume and height, aspect, and Shape. Also contains the stem section. It does not store state variables (things that change over time), but enables calculating actual diameter, volume and height, taking a (relative) growth percentage as input.</p>
+</li>
+<li>
+<p>PlantShape is a class storing state variables, analogous to PlantGrowth and PlantRessource. stores relative size that follows a Gompertz-growth function and further variables for environment-dependent effects (density). Also responsibe for volume - surface area conversion.</p>
+</li>
+</ul>
+<h1 id="references"><a class="header" href="#references">References</a></h1>
+<p>Grimm V, Berger U, Bastiansen F, Eliassen S, Ginot V, Giske J, Goss-Custard J, Grand T, Heinz SK, Huse G, Huth A, Jepsen JU, Jørgensen C, Mooij WM, Müller B, Pe’er G, Piou C, Railsback SF, Robbins AM, Robbins MM, Rossmanith E, Rüger N, Strand E, Souissi S, Stillman RA, Vabø R, Visser U, DeAngelis DL (2006). A standard protocol for describing individual-based and agent-based models. Ecological Modelling 198, 1-2, 115-126. doi: https://doi.org/10.1016/j.ecolmodel.2006.04.023.</p>
+<p>Grimm V (2020). The ODD protocol: An update with guidance to support wider and more consistent use. Ecological Modelling, 428, 109105. doi: https://doi.org/10.1016/j.ecolmodel.2020.109105.</p>
+<p>Tjørve KMC, Tjørve E (2017) The use of Gompertz models in growth analyses, and new Gompertz-model approach: An addition to the Unified-Richards family. PLOS ONE 12(6): e0178691. https://doi.org/10.1371/journal.pone.0178691</p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="Joschinski_model_guide.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M41.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.3 256 246.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"/></svg></span>
+                            </a>
+
+                            <a rel="next prefetch" href="User_guide.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z"/></svg></span>
+                            </a>
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="Joschinski_model_guide.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M41.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.3 256 246.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"/></svg></span>
+                    </a>
+
+                    <a rel="next prefetch" href="User_guide.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z"/></svg></span>
+                    </a>
+            </nav>
+
+        </div>
+
+        <template id=fa-eye><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M288 32c-80.8 0-145.5 36.8-192.6 80.6C48.6 156 17.3 208 2.5 243.7c-3.3 7.9-3.3 16.7 0 24.6C17.3 304 48.6 356 95.4 399.4C142.5 443.2 207.2 480 288 480s145.5-36.8 192.6-80.6c46.8-43.5 78.1-95.4 93-131.1c3.3-7.9 3.3-16.7 0-24.6c-14.9-35.7-46.2-87.7-93-131.1C433.5 68.8 368.8 32 288 32zM432 256c0 79.5-64.5 144-144 144s-144-64.5-144-144s64.5-144 144-144s144 64.5 144 144zM288 192c0 35.3-28.7 64-64 64c-11.5 0-22.3-3-31.6-8.4c-.2 2.8-.4 5.5-.4 8.4c0 53 43 96 96 96s96-43 96-96s-43-96-96-96c-2.8 0-5.6 .1-8.4 .4c5.3 9.3 8.4 20.1 8.4 31.6z"/></svg></span></template>
+        <template id=fa-eye-slash><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M38.8 5.1C28.4-3.1 13.3-1.2 5.1 9.2S-1.2 34.7 9.2 42.9l592 464c10.4 8.2 25.5 6.3 33.7-4.1s6.3-25.5-4.1-33.7L525.6 386.7c39.6-40.6 66.4-86.1 79.9-118.4c3.3-7.9 3.3-16.7 0-24.6c-14.9-35.7-46.2-87.7-93-131.1C465.5 68.8 400.8 32 320 32c-68.2 0-125 26.3-169.3 60.8L38.8 5.1zM223.1 149.5C248.6 126.2 282.7 112 320 112c79.5 0 144 64.5 144 144c0 24.9-6.3 48.3-17.4 68.7L408 294.5c5.2-11.8 8-24.8 8-38.5c0-53-43-96-96-96c-2.8 0-5.6 .1-8.4 .4c5.3 9.3 8.4 20.1 8.4 31.6c0 10.2-2.4 19.8-6.6 28.3l-90.3-70.8zm223.1 298L373 389.9c-16.4 6.5-34.3 10.1-53 10.1c-79.5 0-144-64.5-144-144c0-6.9 .5-13.6 1.4-20.2L83.1 161.5C60.3 191.2 44 220.8 34.5 243.7c-3.3 7.9-3.3 16.7 0 24.6c14.9 35.7 46.2 87.7 93 131.1C174.5 443.2 239.2 480 320 480c47.8 0 89.9-12.9 126.2-32.5z"/></svg></span></template>
+        <template id=fa-copy><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M502.6 70.63l-61.25-61.25C435.4 3.371 427.2 0 418.7 0H255.1c-35.35 0-64 28.66-64 64l.0195 256C192 355.4 220.7 384 256 384h192c35.2 0 64-28.8 64-64V93.25C512 84.77 508.6 76.63 502.6 70.63zM464 320c0 8.836-7.164 16-16 16H255.1c-8.838 0-16-7.164-16-16L239.1 64.13c0-8.836 7.164-16 16-16h128L384 96c0 17.67 14.33 32 32 32h47.1V320zM272 448c0 8.836-7.164 16-16 16H63.1c-8.838 0-16-7.164-16-16L47.98 192.1c0-8.836 7.164-16 16-16H160V128H63.99c-35.35 0-64 28.65-64 64l.0098 256C.002 483.3 28.66 512 64 512h192c35.2 0 64-28.8 64-64v-32h-47.1L272 448z"/></svg></span></template>
+        <template id=fa-play><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z"/></svg></span></template>
+        <template id=fa-clock-rotate-left><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M75 75L41 41C25.9 25.9 0 36.6 0 57.9V168c0 13.3 10.7 24 24 24H134.1c21.4 0 32.1-25.9 17-41l-30.8-30.8C155 85.5 203 64 256 64c106 0 192 86 192 192s-86 192-192 192c-40.8 0-78.6-12.7-109.7-34.4c-14.5-10.1-34.4-6.6-44.6 7.9s-6.6 34.4 7.9 44.6C151.2 495 201.7 512 256 512c141.4 0 256-114.6 256-256S397.4 0 256 0C185.3 0 121.3 28.7 75 75zm181 53c-13.3 0-24 10.7-24 24V256c0 6.4 2.5 12.5 7 17l72 72c9.4 9.4 24.6 9.4 33.9 0s9.4-24.6 0-33.9l-65-65V152c0-13.3-10.7-24-24-24z"/></svg></span></template>
+
+        <!-- Livereload script (if served using the cli tool) -->
+        <script>
+            const wsProtocol = location.protocol === 'https:' ? 'wss:' : 'ws:';
+            const wsAddress = wsProtocol + "//" + location.host + "/" + "__livereload";
+            const socket = new WebSocket(wsAddress);
+            socket.onmessage = function (event) {
+                if (event.data === "reload") {
+                    socket.close();
+                    location.reload();
+                }
+            };
+
+            window.onbeforeunload = function() {
+                socket.close();
+            }
+        </script>
+
+
+        <script>
+            window.playground_copyable = true;
+        </script>
+
+
+        <script src="elasticlunr-ef4e11c1.min.js"></script>
+        <script src="mark-09e88c2c.min.js"></script>
+        <script src="searcher-09f2665d.js"></script>
+
+        <script src="clipboard-1626706a.min.js"></script>
+        <script src="highlight-abc7f01d.js"></script>
+        <script src="book-c22b7243.js"></script>
+
+        <!-- Custom JS scripts -->
+
+
+
+    </div>
+    </body>
+</html>
